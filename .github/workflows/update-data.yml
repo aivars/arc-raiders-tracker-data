@@ -54,6 +54,14 @@ jobs:
           const items = [];
           const recycleMap = {}; // For reverse lookup
 
+          // Helper to extract English text from localized strings
+          const getEnglish = (field) => {
+            if (!field) return null;
+            if (typeof field === 'string') return field;
+            if (typeof field === 'object' && field.en) return field.en;
+            return null;
+          };
+
           // First pass: collect all items and build recycle map
           for (const file of files) {
             try {
@@ -61,23 +69,23 @@ jobs:
 
               const item = {
                 id: data.id || path.basename(file, '.json'),
-                name: data.name || 'Unknown',
-                type: data.type || 'Unknown',
-                rarity: data.rarity || 'Common',
+                name: getEnglish(data.name) || 'Unknown',
+                type: getEnglish(data.type) || data.type || 'Unknown',
+                rarity: getEnglish(data.rarity) || data.rarity || 'Common',
                 value: data.value || null,
-                weightKg: data.weight_kg || null,
-                stackSize: data.stack_size || null,
+                weightKg: data.weightKg || null,
+                stackSize: data.stackSize || null,
                 imageUrl: data.id ? `https://cdn.arctracker.io/items/${data.id}.png` : null,
                 recyclesInto: null,
                 recycleSources: null
               };
 
               // Handle recycles_into
-              if (data.recycles_into && Object.keys(data.recycles_into).length > 0) {
-                item.recyclesInto = data.recycles_into;
+              if (data.recyclesInto && Object.keys(data.recyclesInto).length > 0) {
+                item.recyclesInto = data.recyclesInto;
 
                 // Build reverse lookup
-                for (const [targetId, quantity] of Object.entries(data.recycles_into)) {
+                for (const [targetId, quantity] of Object.entries(data.recyclesInto)) {
                   if (!recycleMap[targetId]) {
                     recycleMap[targetId] = [];
                   }
