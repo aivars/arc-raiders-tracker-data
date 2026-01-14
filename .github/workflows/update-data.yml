@@ -1,0 +1,179 @@
+name: Update Game Data
+
+on:
+  schedule:
+    # Run daily at 3:00 AM UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch and transform data
+        run: |
+          # Fetch items from RaidTheory GitHub
+          echo "Fetching item list from RaidTheory..."
+
+          # Get list of item files
+          ITEMS_LIST=$(curl -s "https://api.github.com/repos/RaidTheory/arcraiders-data/contents/items" | jq -r '.[].name' | grep '.json$')
+
+          # Create temporary directory
+          mkdir -p temp_items
+
+          # Download each item file
+          echo "Downloading items..."
+          for item in $ITEMS_LIST; do
+            curl -s "https://raw.githubusercontent.com/RaidTheory/arcraiders-data/main/items/$item" -o "temp_items/$item"
+            sleep 0.05  # Rate limiting
+          done
+
+          # Count items
+          ITEM_COUNT=$(ls temp_items/*.json 2>/dev/null | wc -l)
+          echo "Downloaded $ITEM_COUNT items"
+
+      - name: Process and build database
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+          const path = require('path');
+
+          // Read all item files
+          const itemsDir = './temp_items';
+          const files = fs.readdirSync(itemsDir).filter(f => f.endsWith('.json'));
+
+          const items = [];
+          const recycleMap = {}; // For reverse lookup
+
+          // First pass: collect all items and build recycle map
+          for (const file of files) {
+            try {
+              const data = JSON.parse(fs.readFileSync(path.join(itemsDir, file), 'utf8'));
+
+              const item = {
+                id: data.id || path.basename(file, '.json'),
+                name: data.name || 'Unknown',
+                type: data.type || 'Unknown',
+                rarity: data.rarity || 'Common',
+                value: data.value || null,
+                weightKg: data.weight_kg || null,
+                stackSize: data.stack_size || null,
+                imageUrl: data.id ? `https://cdn.arctracker.io/items/${data.id}.png` : null,
+                recyclesInto: null,
+                recycleSources: null
+              };
+
+              // Handle recycles_into
+              if (data.recycles_into && Object.keys(data.recycles_into).length > 0) {
+                item.recyclesInto = data.recycles_into;
+
+                // Build reverse lookup
+                for (const [targetId, quantity] of Object.entries(data.recycles_into)) {
+                  if (!recycleMap[targetId]) {
+                    recycleMap[targetId] = [];
+                  }
+                  recycleMap[targetId].push({
+                    sourceItemId: item.id,
+                    sourceItemName: item.name,
+                    yieldsQuantity: quantity
+                  });
+                }
+              }
+
+              items.push(item);
+            } catch (e) {
+              console.error(`Error processing ${file}:`, e.message);
+            }
+          }
+
+          // Second pass: add recycleSources to items
+          for (const item of items) {
+            if (recycleMap[item.id]) {
+              item.recycleSources = recycleMap[item.id].sort((a, b) => b.yieldsQuantity - a.yieldsQuantity);
+            }
+          }
+
+          // Sort items by name
+          items.sort((a, b) => a.name.localeCompare(b.name));
+
+          // Read current version
+          let currentVersion = "1.0";
+          try {
+            const versionData = JSON.parse(fs.readFileSync('./version.json', 'utf8'));
+            currentVersion = versionData.version;
+          } catch (e) {}
+
+          // Check if data changed by comparing item count and checksums
+          let dataChanged = false;
+          try {
+            const existingData = JSON.parse(fs.readFileSync('./items.json', 'utf8'));
+            const existingChecksum = JSON.stringify(existingData.items.map(i => i.id + i.name).sort()).length;
+            const newChecksum = JSON.stringify(items.map(i => i.id + i.name).sort()).length;
+            dataChanged = existingData.itemCount !== items.length || existingChecksum !== newChecksum;
+          } catch (e) {
+            dataChanged = true; // No existing file
+          }
+
+          if (dataChanged) {
+            // Increment version
+            const versionParts = currentVersion.split('.');
+            const minor = parseInt(versionParts[1] || 0) + 1;
+            const newVersion = `${versionParts[0]}.${minor}`;
+
+            // Write items.json
+            const database = {
+              version: newVersion,
+              generatedAt: new Date().toISOString(),
+              itemCount: items.length,
+              items: items
+            };
+
+            fs.writeFileSync('./items.json', JSON.stringify(database, null, 2));
+
+            // Write version.json
+            const versionInfo = {
+              version: newVersion,
+              updatedAt: new Date().toISOString(),
+              itemCount: items.length
+            };
+
+            fs.writeFileSync('./version.json', JSON.stringify(versionInfo, null, 2));
+
+            console.log(`Data updated to v${newVersion} with ${items.length} items`);
+            fs.writeFileSync('./data_changed.txt', 'true');
+          } else {
+            console.log('No changes detected');
+            fs.writeFileSync('./data_changed.txt', 'false');
+          }
+          EOF
+
+      - name: Cleanup temp files
+        run: rm -rf temp_items
+
+      - name: Check if data changed
+        id: check_changes
+        run: |
+          if [ -f data_changed.txt ] && [ "$(cat data_changed.txt)" = "true" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+          rm -f data_changed.txt
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add items.json version.json
+          git commit -m "Auto-update game data to $(jq -r .version version.json)"
+          git push
