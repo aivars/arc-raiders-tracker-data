@@ -107,46 +107,97 @@ jobs:
           // Sort items by name
           items.sort((a, b) => a.name.localeCompare(b.name));
 
-          // Read current version
+          // Read current versions
           let currentVersion = "1.0";
+          let currentMapEventsVersion = "1.0";
+          let currentUpdatedAt = null;
+          let currentMapEventsUpdatedAt = null;
           try {
             const versionData = JSON.parse(fs.readFileSync('./version.json', 'utf8'));
-            currentVersion = versionData.version;
+            currentVersion = versionData.version || currentVersion;
+            currentMapEventsVersion = versionData.mapEventsVersion || currentMapEventsVersion;
+            currentUpdatedAt = versionData.updatedAt || currentUpdatedAt;
+            currentMapEventsUpdatedAt = versionData.mapEventsUpdatedAt || currentMapEventsUpdatedAt;
           } catch (e) {}
 
-          // Check if data changed by comparing item count and checksums
-          let dataChanged = false;
+          // Check if items changed by comparing item count and checksums
+          let itemsChanged = false;
           try {
             const existingData = JSON.parse(fs.readFileSync('./items.json', 'utf8'));
             const existingChecksum = JSON.stringify(existingData.items.map(i => i.id + i.name).sort()).length;
             const newChecksum = JSON.stringify(items.map(i => i.id + i.name).sort()).length;
-            dataChanged = existingData.itemCount !== items.length || existingChecksum !== newChecksum;
+            itemsChanged = existingData.itemCount !== items.length || existingChecksum !== newChecksum;
           } catch (e) {
-            dataChanged = true; // No existing file
+            itemsChanged = true; // No existing file
           }
 
+          // Load and compare map events
+          const mapEventsPath = './raidtheory-data/map-events/map-events.json';
+          let mapEventsChanged = false;
+          let mapEvents = null;
+          try {
+            mapEvents = JSON.parse(fs.readFileSync(mapEventsPath, 'utf8'));
+          } catch (e) {
+            throw new Error(`Failed to read map events: ${e.message}`);
+          }
+
+          try {
+            const existingMapEvents = JSON.parse(fs.readFileSync('./map-events.json', 'utf8'));
+            mapEventsChanged = JSON.stringify(existingMapEvents) !== JSON.stringify(mapEvents);
+          } catch (e) {
+            mapEventsChanged = true; // No existing file
+          }
+
+          const dataChanged = itemsChanged || mapEventsChanged;
+
           if (dataChanged) {
-            // Increment version
-            const versionParts = currentVersion.split('.');
-            const minor = parseInt(versionParts[1] || 0) + 1;
-            const newVersion = `${versionParts[0]}.${minor}`;
+            // Increment versions when data changes
+            let newVersion = currentVersion;
+            let newMapEventsVersion = currentMapEventsVersion;
+
+            if (itemsChanged) {
+              const versionParts = currentVersion.split('.');
+              const minor = parseInt(versionParts[1] || 0) + 1;
+              newVersion = `${versionParts[0]}.${minor}`;
+            }
+
+            if (mapEventsChanged) {
+              const mapParts = currentMapEventsVersion.split('.');
+              const minor = parseInt(mapParts[1] || 0) + 1;
+              newMapEventsVersion = `${mapParts[0]}.${minor}`;
+            }
 
             // Write items.json
-            const database = {
-              version: newVersion,
-              generatedAt: new Date().toISOString(),
-              itemCount: items.length,
-              items: items
-            };
+            if (itemsChanged) {
+              const database = {
+                version: newVersion,
+                generatedAt: new Date().toISOString(),
+                itemCount: items.length,
+                items: items
+              };
 
-            fs.writeFileSync('./items.json', JSON.stringify(database, null, 2));
+              fs.writeFileSync('./items.json', JSON.stringify(database, null, 2));
+            }
+
+            if (mapEventsChanged) {
+              fs.writeFileSync('./map-events.json', JSON.stringify(mapEvents, null, 2));
+            }
 
             // Write version.json
             const versionInfo = {
               version: newVersion,
-              updatedAt: new Date().toISOString(),
+              updatedAt: itemsChanged
+                ? new Date().toISOString()
+                : (currentUpdatedAt || new Date().toISOString()),
               itemCount: items.length
             };
+
+            if (mapEventsChanged || currentMapEventsVersion) {
+              versionInfo.mapEventsVersion = newMapEventsVersion;
+              versionInfo.mapEventsUpdatedAt = mapEventsChanged
+                ? new Date().toISOString()
+                : currentMapEventsUpdatedAt;
+            }
 
             fs.writeFileSync('./version.json', JSON.stringify(versionInfo, null, 2));
 
@@ -173,7 +224,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add items.json version.json
-          VERSION=$(node -p "require('./version.json').version")
-          git commit -m "Auto-update game data to ${VERSION}"
+          git add items.json map-events.json version.json
+          VERSION=$(node -p "const v=require('./version.json'); 'items ' + v.version + (v.mapEventsVersion ? ', events ' + v.mapEventsVersion : '')")
+          git commit -m "Auto-update game data (${VERSION})"
           git push
