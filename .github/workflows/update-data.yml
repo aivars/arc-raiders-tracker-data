@@ -110,14 +110,18 @@ jobs:
           // Read current versions
           let currentVersion = "1.0";
           let currentMapEventsVersion = "1.0";
+          let currentEventsVersion = "1.0";
           let currentUpdatedAt = null;
           let currentMapEventsUpdatedAt = null;
+          let currentEventsUpdatedAt = null;
           try {
             const versionData = JSON.parse(fs.readFileSync('./version.json', 'utf8'));
             currentVersion = versionData.version || currentVersion;
             currentMapEventsVersion = versionData.mapEventsVersion || currentMapEventsVersion;
+            currentEventsVersion = versionData.eventsVersion || currentEventsVersion;
             currentUpdatedAt = versionData.updatedAt || currentUpdatedAt;
             currentMapEventsUpdatedAt = versionData.mapEventsUpdatedAt || currentMapEventsUpdatedAt;
+            currentEventsUpdatedAt = versionData.eventsUpdatedAt || currentEventsUpdatedAt;
           } catch (e) {}
 
           // Check if items changed by comparing item count and checksums
@@ -148,12 +152,94 @@ jobs:
             mapEventsChanged = true; // No existing file
           }
 
-          const dataChanged = itemsChanged || mapEventsChanged;
+          const now = new Date();
+          const startDateUtc = new Date(Date.UTC(
+            now.getUTCFullYear(),
+            now.getUTCMonth(),
+            now.getUTCDate(),
+            0, 0, 0, 0
+          ));
+          const eventsDays = 30;
+          const eventDurationMinutes = 60;
+          const msPerHour = 60 * 60 * 1000;
+
+          const buildEventInstances = (mapEventsData, startDate, days) => {
+            const events = [];
+            const eventTypes = mapEventsData.eventTypes || {};
+            const maps = mapEventsData.maps || {};
+            const schedule = mapEventsData.schedule || {};
+            const endDateUtc = new Date(startDate.getTime() + days * 24 * msPerHour);
+
+            for (const [mapId, mapSchedule] of Object.entries(schedule)) {
+              if (!mapSchedule) continue;
+              const mapName = maps[mapId]?.displayName || mapId;
+
+              for (const category of ['major', 'minor']) {
+                const hours = mapSchedule[category] || {};
+                for (const [hourKey, eventTypeId] of Object.entries(hours)) {
+                  if (!eventTypeId || eventTypeId === 'none') continue;
+                  const eventType = eventTypes[eventTypeId];
+                  if (!eventType || eventType.disabled || eventType.category === 'none') continue;
+
+                  const hour = parseInt(hourKey, 10);
+                  if (Number.isNaN(hour)) continue;
+
+                  for (let dayOffset = 0; dayOffset < days; dayOffset++) {
+                    const dayDate = new Date(startDate.getTime() + dayOffset * 24 * msPerHour);
+                    const startTime = new Date(Date.UTC(
+                      dayDate.getUTCFullYear(),
+                      dayDate.getUTCMonth(),
+                      dayDate.getUTCDate(),
+                      hour, 0, 0, 0
+                    ));
+
+                    if (startTime < startDate || startTime >= endDateUtc) continue;
+
+                    const endTime = new Date(startTime.getTime() + msPerHour);
+                    events.push({
+                      eventTypeId,
+                      eventName: eventType.displayName || eventTypeId,
+                      category: eventType.category || category,
+                      mapId,
+                      mapName,
+                      icon: eventType.icon || null,
+                      startTime: startTime.getTime(),
+                      endTime: endTime.getTime()
+                    });
+                  }
+                }
+              }
+            }
+
+            events.sort((a, b) => a.startTime - b.startTime);
+            return { events, endDateUtc };
+          };
+
+          const { events, endDateUtc } = buildEventInstances(mapEvents, startDateUtc, eventsDays);
+          const eventsOutput = {
+            generatedAt: startDateUtc.toISOString(),
+            startTimeUtc: startDateUtc.toISOString(),
+            endTimeUtc: endDateUtc.toISOString(),
+            durationMinutes: eventDurationMinutes,
+            eventCount: events.length,
+            events: events
+          };
+
+          let eventsChanged = false;
+          try {
+            const existingEvents = JSON.parse(fs.readFileSync('./events.json', 'utf8'));
+            eventsChanged = JSON.stringify(existingEvents) !== JSON.stringify(eventsOutput);
+          } catch (e) {
+            eventsChanged = true; // No existing file
+          }
+
+          const dataChanged = itemsChanged || mapEventsChanged || eventsChanged;
 
           if (dataChanged) {
             // Increment versions when data changes
             let newVersion = currentVersion;
             let newMapEventsVersion = currentMapEventsVersion;
+            let newEventsVersion = currentEventsVersion;
 
             if (itemsChanged) {
               const versionParts = currentVersion.split('.');
@@ -165,6 +251,12 @@ jobs:
               const mapParts = currentMapEventsVersion.split('.');
               const minor = parseInt(mapParts[1] || 0) + 1;
               newMapEventsVersion = `${mapParts[0]}.${minor}`;
+            }
+
+            if (eventsChanged) {
+              const eventsParts = currentEventsVersion.split('.');
+              const minor = parseInt(eventsParts[1] || 0) + 1;
+              newEventsVersion = `${eventsParts[0]}.${minor}`;
             }
 
             // Write items.json
@@ -183,6 +275,10 @@ jobs:
               fs.writeFileSync('./map-events.json', JSON.stringify(mapEvents, null, 2));
             }
 
+            if (eventsChanged) {
+              fs.writeFileSync('./events.json', JSON.stringify(eventsOutput, null, 2));
+            }
+
             // Write version.json
             const versionInfo = {
               version: newVersion,
@@ -196,7 +292,14 @@ jobs:
               versionInfo.mapEventsVersion = newMapEventsVersion;
               versionInfo.mapEventsUpdatedAt = mapEventsChanged
                 ? new Date().toISOString()
-                : currentMapEventsUpdatedAt;
+                : (currentMapEventsUpdatedAt || new Date().toISOString());
+            }
+
+            if (eventsChanged || currentEventsVersion) {
+              versionInfo.eventsVersion = newEventsVersion;
+              versionInfo.eventsUpdatedAt = eventsChanged
+                ? new Date().toISOString()
+                : (currentEventsUpdatedAt || new Date().toISOString());
             }
 
             fs.writeFileSync('./version.json', JSON.stringify(versionInfo, null, 2));
@@ -219,12 +322,48 @@ jobs:
           fi
           rm -f data_changed.txt
 
+      - name: Upload to Supabase Storage
+        if: steps.check_changes.outputs.changed == 'true'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_BUCKET: ${{ secrets.SUPABASE_BUCKET }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ] || [ -z "$SUPABASE_BUCKET" ]; then
+            echo "Supabase secrets missing; skipping upload."
+            exit 0
+          fi
+
+          upload_file() {
+            local file_path="$1"
+            local object_path="$2"
+            local url="${SUPABASE_URL}/storage/v1/object/${SUPABASE_BUCKET}/${object_path}"
+            local status
+            status=$(curl -sS -o /dev/null -w "%{http_code}" \
+              -X POST "$url" \
+              -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+              -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+              -H "Content-Type: application/json" \
+              -H "x-upsert: true" \
+              --data-binary @"${file_path}")
+
+            if [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
+              echo "Upload failed for ${file_path} (HTTP ${status})"
+              exit 1
+            fi
+          }
+
+          upload_file "items.json" "items.json"
+          upload_file "version.json" "version.json"
+          upload_file "map-events.json" "map-events.json"
+          upload_file "events.json" "events.json"
+
       - name: Commit and push changes
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add items.json map-events.json version.json
-          VERSION=$(node -p "const v=require('./version.json'); 'items ' + v.version + (v.mapEventsVersion ? ', events ' + v.mapEventsVersion : '')")
+          git add items.json map-events.json events.json version.json
+          VERSION=$(node -p "const v=require('./version.json'); 'items ' + v.version + (v.mapEventsVersion ? ', map-events ' + v.mapEventsVersion : '') + (v.eventsVersion ? ', events ' + v.eventsVersion : '')")
           git commit -m "Auto-update game data (${VERSION})"
           git push
