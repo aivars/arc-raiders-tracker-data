@@ -1,5 +1,9 @@
 {
   "version": "1.1",
   "updatedAt": "2026-01-22T05:11:37.859Z",
-  "itemCount": 497
+  "itemCount": 497,
+  "mapEventsVersion": "1.1",
+  "mapEventsUpdatedAt": "2026-01-22T07:23:41.317Z",
+  "eventsVersion": "1.1",
+  "eventsUpdatedAt": "2026-01-22T07:23:41.317Z"
 }
