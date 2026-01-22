@@ -14,32 +14,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout RaidTheory data
+        uses: actions/checkout@v4
+        with:
+          repository: RaidTheory/arcraiders-data
+          path: raidtheory-data
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Fetch and transform data
-        run: |
-          # Fetch items from RaidTheory GitHub
-          echo "Fetching item list from RaidTheory..."
-
-          # Get list of item files
-          ITEMS_LIST=$(curl -s "https://api.github.com/repos/RaidTheory/arcraiders-data/contents/items" | jq -r '.[].name' | grep '.json$')
-
-          # Create temporary directory
-          mkdir -p temp_items
-
-          # Download each item file
-          echo "Downloading items..."
-          for item in $ITEMS_LIST; do
-            curl -s "https://raw.githubusercontent.com/RaidTheory/arcraiders-data/main/items/$item" -o "temp_items/$item"
-            sleep 0.05  # Rate limiting
-          done
-
-          # Count items
-          ITEM_COUNT=$(ls temp_items/*.json 2>/dev/null | wc -l)
-          echo "Downloaded $ITEM_COUNT items"
 
       - name: Process and build database
         run: |
@@ -48,8 +32,15 @@ jobs:
           const path = require('path');
 
           // Read all item files
-          const itemsDir = './temp_items';
+          const itemsDir = './raidtheory-data/items';
+          if (!fs.existsSync(itemsDir)) {
+            throw new Error(`Items directory not found: ${itemsDir}`);
+          }
+
           const files = fs.readdirSync(itemsDir).filter(f => f.endsWith('.json'));
+          if (files.length === 0) {
+            throw new Error('No item files found in RaidTheory data');
+          }
 
           const items = [];
           const recycleMap = {}; // For reverse lookup
@@ -164,9 +155,6 @@ jobs:
           }
           EOF
 
-      - name: Cleanup temp files
-        run: rm -rf temp_items
-
       - name: Check if data changed
         id: check_changes
         run: |
@@ -183,5 +171,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add items.json version.json
-          git commit -m "Auto-update game data to $(jq -r .version version.json)"
+          VERSION=$(node -p "require('./version.json').version")
+          git commit -m "Auto-update game data to ${VERSION}"
           git push
