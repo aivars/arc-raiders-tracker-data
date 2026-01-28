@@ -370,3 +370,91 @@ jobs:
           VERSION=$(node -p "const v=require('./version.json'); 'items ' + v.version + (v.mapEventsVersion ? ', map-events ' + v.mapEventsVersion : '') + (v.eventsVersion ? ', events ' + v.eventsVersion : '')")
           git commit -m "Auto-update game data (${VERSION})"
           git push
+
+      - name: Check RaidTheory for new content
+        id: check_upstream
+        run: |
+          node << 'EOF'
+          const fs = require('fs');
+
+          // Load our map-events.json
+          const ourData = JSON.parse(fs.readFileSync('./map-events.json', 'utf8'));
+
+          // Load RaidTheory's map-events.json
+          const raidTheoryPath = './raidtheory-data/map-events/map-events.json';
+          if (!fs.existsSync(raidTheoryPath)) {
+            console.log('RaidTheory data not found, skipping check');
+            fs.writeFileSync('./upstream_changes.txt', '');
+            process.exit(0);
+          }
+
+          const upstreamData = JSON.parse(fs.readFileSync(raidTheoryPath, 'utf8'));
+
+          const newEventTypes = [];
+          const newMaps = [];
+
+          // Check for new event types in upstream
+          for (const eventId of Object.keys(upstreamData.eventTypes || {})) {
+            if (!ourData.eventTypes || !ourData.eventTypes[eventId]) {
+              const event = upstreamData.eventTypes[eventId];
+              newEventTypes.push({
+                id: eventId,
+                name: event.displayName || eventId,
+                category: event.category || 'unknown'
+              });
+            }
+          }
+
+          // Check for new maps in upstream
+          for (const mapId of Object.keys(upstreamData.maps || {})) {
+            if (!ourData.maps || !ourData.maps[mapId]) {
+              const map = upstreamData.maps[mapId];
+              newMaps.push({
+                id: mapId,
+                name: map.displayName || mapId
+              });
+            }
+          }
+
+          if (newEventTypes.length === 0 && newMaps.length === 0) {
+            console.log('No new content in RaidTheory upstream');
+            fs.writeFileSync('./upstream_changes.txt', '');
+          } else {
+            console.log('New content detected in RaidTheory!');
+            const changes = [];
+            if (newEventTypes.length > 0) {
+              changes.push(`New Events: ${newEventTypes.map(e => e.name).join(', ')}`);
+              console.log('New event types:', newEventTypes);
+            }
+            if (newMaps.length > 0) {
+              changes.push(`New Maps: ${newMaps.map(m => m.name).join(', ')}`);
+              console.log('New maps:', newMaps);
+            }
+            fs.writeFileSync('./upstream_changes.txt', changes.join('\n'));
+          }
+          EOF
+
+      - name: Create issue for new upstream content
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f upstream_changes.txt ] && [ -s upstream_changes.txt ]; then
+            CHANGES=$(cat upstream_changes.txt)
+            gh issue create \
+              --title "New game content detected in RaidTheory upstream" \
+              --body "The following new content was detected in RaidTheory's arcraiders-data repository:
+
+          $CHANGES
+
+          **Action Required:** Review and add this content to our local \`map-events.json\` file.
+
+          1. Check if the new events/maps are live in the game
+          2. Add event types to \`eventTypes\` section
+          3. Add schedule entries to \`schedule\` section
+          4. Trigger workflow to regenerate events
+
+          _This issue was automatically created by the data update workflow._" \
+              --label "enhancement,automated"
+          fi
+          rm -f upstream_changes.txt
