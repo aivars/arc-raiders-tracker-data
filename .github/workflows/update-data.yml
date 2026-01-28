@@ -135,21 +135,24 @@ jobs:
             itemsChanged = true; // No existing file
           }
 
-          // Load and compare map events
-          const mapEventsPath = './raidtheory-data/map-events/map-events.json';
+          // Load map events from LOCAL file (we manage schedules independently of RaidTheory)
+          // This allows us to add new events like Bird City before RaidTheory updates
+          const localMapEventsPath = './map-events.json';
           let mapEventsChanged = false;
           let mapEvents = null;
           try {
-            mapEvents = JSON.parse(fs.readFileSync(mapEventsPath, 'utf8'));
+            mapEvents = JSON.parse(fs.readFileSync(localMapEventsPath, 'utf8'));
+            console.log('Loaded map events from local file');
           } catch (e) {
-            throw new Error(`Failed to read map events: ${e.message}`);
-          }
-
-          try {
-            const existingMapEvents = JSON.parse(fs.readFileSync('./map-events.json', 'utf8'));
-            mapEventsChanged = JSON.stringify(existingMapEvents) !== JSON.stringify(mapEvents);
-          } catch (e) {
-            mapEventsChanged = true; // No existing file
+            // Fallback to RaidTheory if local doesn't exist
+            const raidTheoryPath = './raidtheory-data/map-events/map-events.json';
+            try {
+              mapEvents = JSON.parse(fs.readFileSync(raidTheoryPath, 'utf8'));
+              mapEventsChanged = true; // Need to create local copy
+              console.log('Loaded map events from RaidTheory (initial setup)');
+            } catch (e2) {
+              throw new Error(`Failed to read map events: ${e2.message}`);
+            }
           }
 
           const now = new Date();
