@@ -1,7 +1,7 @@
 {
-  "version": "1.1",
-  "generatedAt": "2026-01-22T05:11:37.857Z",
-  "itemCount": 497,
+  "version": "1.2",
+  "generatedAt": "2026-01-28T03:31:04.822Z",
+  "itemCount": 499,
   "items": [
     {
       "id": "extended_shotgun_mag_i",
@@ -4443,7 +4443,7 @@
       "name": "Kettle II",
       "type": "Assault Rifle",
       "rarity": "Common",
-      "value": 840,
+      "value": 2000,
       "weightKg": 7,
       "stackSize": null,
       "imageUrl": "https://cdn.arctracker.io/items/kettle_ii.png",
@@ -4775,6 +4775,18 @@
         "advanced_electrical_components": 1,
         "processor": 1
       },
+      "recycleSources": null
+    },
+    {
+      "id": "looting_mk3_safekeeper",
+      "name": "Looting Mk. 3 (Safekeeper)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "value": 5000,
+      "weightKg": 3,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/looting_mk3_safekeeper.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -8743,6 +8755,18 @@
       "recycleSources": null
     },
     {
+      "id": "tactical_mk3_revival",
+      "name": "Tactical Mk. 3 (Revival)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "value": 5000,
+      "weightKg": 4,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_revival.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "tagging_grenade",
       "name": "Tagging Grenade",
       "type": "Quick Use",
@@ -8874,7 +8898,7 @@
       "name": "Tempest IV",
       "type": "Assault Rifle",
       "rarity": "Epic",
-      "value": 22000,
+      "value": 27000,
       "weightKg": 11,
       "stackSize": null,
       "imageUrl": "https://cdn.arctracker.io/items/tempest_iv.png",
