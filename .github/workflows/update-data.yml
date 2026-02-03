@@ -2,8 +2,14 @@ name: Update Game Data
 
 on:
   schedule:
-    # Run daily at 3:00 AM UTC
-    - cron: '0 3 * * *'
+    # Run hourly to keep events window and outages in sync faster
+    - cron: '5 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'map-events.json'
+      - 'events-control.json'
+      - '.github/workflows/update-data.yml'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
@@ -114,6 +120,8 @@ jobs:
           let currentUpdatedAt = null;
           let currentMapEventsUpdatedAt = null;
           let currentEventsUpdatedAt = null;
+          let currentEventsEnabled = null;
+          let currentEventsDisabledReason = null;
           try {
             const versionData = JSON.parse(fs.readFileSync('./version.json', 'utf8'));
             currentVersion = versionData.version || currentVersion;
@@ -122,6 +130,12 @@ jobs:
             currentUpdatedAt = versionData.updatedAt || currentUpdatedAt;
             currentMapEventsUpdatedAt = versionData.mapEventsUpdatedAt || currentMapEventsUpdatedAt;
             currentEventsUpdatedAt = versionData.eventsUpdatedAt || currentEventsUpdatedAt;
+            if (typeof versionData.eventsEnabled === 'boolean') {
+              currentEventsEnabled = versionData.eventsEnabled;
+            }
+            if (typeof versionData.eventsDisabledReason === 'string') {
+              currentEventsDisabledReason = versionData.eventsDisabledReason;
+            }
           } catch (e) {}
 
           // Check if items changed by comparing item count and checksums
@@ -154,6 +168,34 @@ jobs:
               throw new Error(`Failed to read map events: ${e2.message}`);
             }
           }
+
+          // Optional runtime override used by the app to hide events when schedules are unreliable
+          const eventsControlPath = './events-control.json';
+          let eventsEnabled = true;
+          let eventsDisabledReason = null;
+          let eventsControlChanged = false;
+          try {
+            const eventsControl = JSON.parse(fs.readFileSync(eventsControlPath, 'utf8'));
+            if (typeof eventsControl.eventsEnabled === 'boolean') {
+              eventsEnabled = eventsControl.eventsEnabled;
+            }
+            if (typeof eventsControl.disabledReason === 'string' && eventsControl.disabledReason.trim().length > 0) {
+              eventsDisabledReason = eventsControl.disabledReason.trim();
+            }
+          } catch (e) {
+            const defaultEventsControl = {
+              eventsEnabled: true,
+              disabledReason: null
+            };
+            fs.writeFileSync(eventsControlPath, JSON.stringify(defaultEventsControl, null, 2));
+            eventsControlChanged = true;
+            console.log('Created default events-control.json');
+          }
+
+          const eventsAvailabilityChanged =
+            currentEventsEnabled === null ||
+            currentEventsEnabled !== eventsEnabled ||
+            ((currentEventsDisabledReason || null) !== (eventsDisabledReason || null));
 
           const now = new Date();
           const startDateUtc = new Date(Date.UTC(
@@ -236,7 +278,7 @@ jobs:
             eventsChanged = true; // No existing file
           }
 
-          const dataChanged = itemsChanged || mapEventsChanged || eventsChanged;
+          const dataChanged = itemsChanged || mapEventsChanged || eventsChanged || eventsControlChanged || eventsAvailabilityChanged;
 
           if (dataChanged) {
             // Increment versions when data changes
@@ -305,6 +347,9 @@ jobs:
                 : (currentEventsUpdatedAt || new Date().toISOString());
             }
 
+            versionInfo.eventsEnabled = eventsEnabled;
+            versionInfo.eventsDisabledReason = eventsEnabled ? null : eventsDisabledReason;
+
             fs.writeFileSync('./version.json', JSON.stringify(versionInfo, null, 2));
 
             console.log(`Data updated to v${newVersion} with ${items.length} items`);
@@ -366,7 +411,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add items.json map-events.json events.json version.json
+          git add items.json map-events.json events.json version.json events-control.json
           VERSION=$(node -p "const v=require('./version.json'); 'items ' + v.version + (v.mapEventsVersion ? ', map-events ' + v.mapEventsVersion : '') + (v.eventsVersion ? ', events ' + v.eventsVersion : '')")
           git commit -m "Auto-update game data (${VERSION})"
           git push
