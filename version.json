@@ -1,9 +1,11 @@
 {
-  "version": "1.3",
-  "updatedAt": "2026-01-30T03:44:36.453Z",
-  "itemCount": 499,
+  "version": "1.4",
+  "updatedAt": "2026-02-03T07:11:13.075Z",
+  "itemCount": 507,
   "mapEventsVersion": "1.2",
   "mapEventsUpdatedAt": "2026-01-28T03:31:04.827Z",
   "eventsVersion": "1.14",
-  "eventsUpdatedAt": "2026-02-03T03:46:36.328Z"
+  "eventsUpdatedAt": "2026-02-03T03:46:36.328Z",
+  "eventsEnabled": false,
+  "eventsDisabledReason": "Map events are temporarily disabled while schedule data is being verified."
 }

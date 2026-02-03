@@ -1,7 +1,7 @@
 {
-  "version": "1.3",
-  "generatedAt": "2026-01-30T03:44:36.447Z",
-  "itemCount": 499,
+  "version": "1.4",
+  "generatedAt": "2026-02-03T07:11:13.073Z",
+  "itemCount": 507,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -87,6 +87,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "looting_mk3_safekeeper",
+          "sourceItemName": "Looting Mk. 3 (Safekeeper)",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "looting_mk3_survivor",
           "sourceItemName": "Looting Mk. 3 (Survivor)",
           "yieldsQuantity": 1
@@ -114,6 +119,11 @@
         {
           "sourceItemId": "tactical_mk3_healing",
           "sourceItemName": "Tactical Mk. 3 (Healing)",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "tactical_mk3_revival",
+          "sourceItemName": "Tactical Mk. 3 (Revival)",
           "yieldsQuantity": 1
         },
         {
@@ -393,6 +403,18 @@
         "plastic_parts": 6,
         "processor": 1
       },
+      "recycleSources": null
+    },
+    {
+      "id": "alien_duck",
+      "name": "Alien Duck",
+      "type": "Trinket",
+      "rarity": "Uncommon",
+      "value": 1000,
+      "weightKg": 0.3,
+      "stackSize": 15,
+      "imageUrl": "https://cdn.arctracker.io/items/alien_duck.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -2659,6 +2681,18 @@
       "recycleSources": null
     },
     {
+      "id": "doodly_duck",
+      "name": "Doodly Duck",
+      "type": "Trinket",
+      "rarity": "Rare",
+      "value": 3000,
+      "weightKg": 0.3,
+      "stackSize": 15,
+      "imageUrl": "https://cdn.arctracker.io/items/doodly_duck.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "door_blocker",
       "name": "Door Blocker",
       "type": "Quick Use",
@@ -3394,6 +3428,18 @@
       "recycleSources": null
     },
     {
+      "id": "familiar_duck",
+      "name": "Familiar Duck",
+      "type": "Trinket",
+      "rarity": "Epic",
+      "value": 7000,
+      "weightKg": 0.3,
+      "stackSize": 15,
+      "imageUrl": "https://cdn.arctracker.io/items/familiar_duck.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "ferro_i",
       "name": "Ferro I",
       "type": "Battle Rifle",
@@ -3604,6 +3650,18 @@
       "recycleSources": null
     },
     {
+      "id": "flashy_duck",
+      "name": "Flashy Duck",
+      "type": "Trinket",
+      "rarity": "Rare",
+      "value": 3000,
+      "weightKg": 0.3,
+      "stackSize": 15,
+      "imageUrl": "https://cdn.arctracker.io/items/flashy_duck.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "flow_controller",
       "name": "Flow Controller",
       "type": "Recyclable",
@@ -3793,6 +3851,18 @@
         "battery": 3,
         "exodus_modules": 1
       },
+      "recycleSources": null
+    },
+    {
+      "id": "gentle_duck",
+      "name": "Gentle Duck",
+      "type": "Trinket",
+      "rarity": "Uncommon",
+      "value": 1000,
+      "weightKg": 0.3,
+      "stackSize": 15,
+      "imageUrl": "https://cdn.arctracker.io/items/gentle_duck.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -4783,9 +4853,24 @@
       "type": "Augment",
       "rarity": "Epic",
       "value": 5000,
-      "weightKg": 3,
+      "weightKg": 5,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/looting_mk3_safekeeper.png",
+      "recyclesInto": {
+        "advanced_electrical_components": 1,
+        "processor": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "looting_mk3_safekeeper_blueprint",
+      "name": "Looting Mk. 3 (Safekeeper) Blueprint",
+      "type": "Blueprint",
+      "rarity": "Legendary",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/looting_mk3_safekeeper_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -6576,6 +6661,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "looting_mk3_safekeeper",
+          "sourceItemName": "Looting Mk. 3 (Safekeeper)",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "looting_mk3_survivor",
           "sourceItemName": "Looting Mk. 3 (Survivor)",
           "yieldsQuantity": 1
@@ -6593,6 +6683,11 @@
         {
           "sourceItemId": "tactical_mk3_healing",
           "sourceItemName": "Tactical Mk. 3 (Healing)",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "tactical_mk3_revival",
+          "sourceItemName": "Tactical Mk. 3 (Revival)",
           "yieldsQuantity": 1
         },
         {
@@ -8568,7 +8663,7 @@
       "id": "stitcher_iii",
       "name": "Stitcher III",
       "type": "SMG",
-      "rarity": "Uncommon",
+      "rarity": "Common",
       "value": 3000,
       "weightKg": 5,
       "stackSize": null,
@@ -8583,7 +8678,7 @@
       "id": "stitcher_iv",
       "name": "Stitcher IV",
       "type": "SMG",
-      "rarity": "Uncommon",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": 5,
       "stackSize": null,
@@ -8760,9 +8855,24 @@
       "type": "Augment",
       "rarity": "Epic",
       "value": 5000,
-      "weightKg": 4,
+      "weightKg": 3,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_revival.png",
+      "recyclesInto": {
+        "advanced_electrical_components": 1,
+        "processor": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "tactical_mk3_revival_blueprint",
+      "name": "Tactical Mk. 3 (Revival) Blueprint",
+      "type": "Blueprint",
+      "rarity": "Legendary",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_revival_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -9101,6 +9211,18 @@
       "weightKg": null,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/trigger_nade_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "tropical_duck",
+      "name": "Tropical Duck",
+      "type": "Trinket",
+      "rarity": "Uncommon",
+      "value": 1000,
+      "weightKg": 0.3,
+      "stackSize": 15,
+      "imageUrl": "https://cdn.arctracker.io/items/tropical_duck.png",
       "recyclesInto": null,
       "recycleSources": null
     },
