@@ -1,7 +1,7 @@
 {
-  "version": "1.4",
-  "generatedAt": "2026-02-03T07:11:13.073Z",
-  "itemCount": 507,
+  "version": "1.5",
+  "generatedAt": "2026-02-05T22:13:09.070Z",
+  "itemCount": 508,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -6105,6 +6105,18 @@
           "yieldsQuantity": 1
         }
       ]
+    },
+    {
+      "id": "old_world_books",
+      "name": "Old World Books",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/old_world_books.png",
+      "recyclesInto": null,
+      "recycleSources": null
     },
     {
       "id": "olives",
