@@ -1,7 +1,7 @@
 {
-  "version": "1.5",
-  "generatedAt": "2026-02-05T22:13:09.070Z",
-  "itemCount": 508,
+  "version": "1.6",
+  "generatedAt": "2026-02-07T01:40:10.527Z",
+  "itemCount": 514,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -414,6 +414,18 @@
       "weightKg": 0.3,
       "stackSize": 15,
       "imageUrl": "https://cdn.arctracker.io/items/alien_duck.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "ancient_fort_security_code",
+      "name": "Ancient Fort Security Code",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/ancient_fort_security_code.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -1367,7 +1379,7 @@
       "id": "blue_gate_cellar_key",
       "name": "Blue Gate Cellar Key",
       "type": "Key",
-      "rarity": "Uncommon",
+      "rarity": "Rare",
       "value": 100,
       "weightKg": 0.25,
       "stackSize": 1,
@@ -2187,7 +2199,7 @@
       "id": "compensator_iii",
       "name": "Compensator III",
       "type": "Modification",
-      "rarity": "Uncommon",
+      "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
       "stackSize": null,
@@ -5880,6 +5892,18 @@
       ]
     },
     {
+      "id": "moisture_meter",
+      "name": "Moisture Meter",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.25,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/moisture_meter.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "moss",
       "name": "Moss",
       "type": "Topside Material",
@@ -6044,6 +6068,18 @@
       "recyclesInto": {
         "metal_parts": 3
       },
+      "recycleSources": null
+    },
+    {
+      "id": "nutrient_meter",
+      "name": "Nutrient Meter",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.25,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/nutrient_meter.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -6268,6 +6304,18 @@
         "advanced_electrical_components": 1,
         "speaker_component": 1
       },
+      "recycleSources": null
+    },
+    {
+      "id": "pilgrims_peak_security_code",
+      "name": "Pilgrim's Peak Security Code",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/pilgrims_peak_security_code.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -6825,6 +6873,18 @@
       "recycleSources": null
     },
     {
+      "id": "raiders_refuge_security_code",
+      "name": "Raider's Refuge Security Code",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/raiders_refuge_security_code.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "rattler_i",
       "name": "Rattler I",
       "type": "Assault Rifle",
@@ -6931,6 +6991,18 @@
       "weightKg": null,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/red_light_stick_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "reinforced_reception_security_code",
+      "name": "Reinforced Reception Security Code",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/reinforced_reception_security_code.png",
       "recyclesInto": null,
       "recycleSources": null
     },
