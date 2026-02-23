@@ -1,7 +1,7 @@
 {
-  "version": "1.7",
-  "generatedAt": "2026-02-23T18:32:09.032Z",
-  "itemCount": 506,
+  "version": "1.8",
+  "generatedAt": "2026-02-23T23:19:18.956Z",
+  "itemCount": 511,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -1501,6 +1501,18 @@
       "recycleSources": null
     },
     {
+      "id": "library_book",
+      "name": "Book",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/library_book.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "breathtaking_snow_globe",
       "name": "Breathtaking Snow Globe",
       "type": "Trinket",
@@ -2884,6 +2896,18 @@
       "weightKg": null,
       "stackSize": null,
       "imageUrl": "https://cdn.arctracker.io/items/equalizer_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "espresso_machine_parts",
+      "name": "Espresso Machine Parts",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/espresso_machine_parts.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -4989,6 +5013,18 @@
       "recycleSources": null
     },
     {
+      "id": "major_aivas_mementos",
+      "name": "Major Aiva's Mementos",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/major_aivas_mementos.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "major_aivas_patch",
       "name": "Major Aiva's Patch",
       "type": "Trinket",
@@ -6482,6 +6518,18 @@
         "battery": 2,
         "wires": 6
       },
+      "recycleSources": null
+    },
+    {
+      "id": "possibly_toxic_plant",
+      "name": "Possibly Toxic Plant",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/possibly_toxic_plant.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -8459,6 +8507,18 @@
       "weightKg": null,
       "stackSize": null,
       "imageUrl": "https://cdn.arctracker.io/items/stable_stock_iii_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "stack_of_movie_tapes",
+      "name": "Stack of Movie Tapes",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/stack_of_movie_tapes.png",
       "recyclesInto": null,
       "recycleSources": null
     },
