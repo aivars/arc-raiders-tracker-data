@@ -1,7 +1,7 @@
 {
-  "version": "1.6",
-  "generatedAt": "2026-02-07T01:40:10.527Z",
-  "itemCount": 514,
+  "version": "1.7",
+  "generatedAt": "2026-02-23T18:32:09.032Z",
+  "itemCount": 506,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -1072,30 +1072,6 @@
       ]
     },
     {
-      "id": "backpack_black_hiker_color",
-      "name": "Backpack (Black Hiker Color)",
-      "type": "Cosmetic",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/backpack_black_hiker_color.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
-      "id": "banana",
-      "name": "Banana",
-      "type": "Backpack Charm",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/banana.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
       "id": "bandage",
       "name": "Bandage",
       "type": "Quick Use",
@@ -1364,18 +1340,6 @@
       "recycleSources": null
     },
     {
-      "id": "blue_radio_renegade_color",
-      "name": "Blue (Radio Renegade Color)",
-      "type": "Cosmetic",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/blue_radio_renegade_color.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
       "id": "blue_gate_cellar_key",
       "name": "Blue Gate Cellar Key",
       "type": "Key",
@@ -1605,18 +1569,6 @@
         "battery": 2,
         "wires": 2
       },
-      "recycleSources": null
-    },
-    {
-      "id": "burgerboy",
-      "name": "Burgerboy",
-      "type": "Backpack Charm",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/burgerboy.png",
-      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -1858,18 +1810,6 @@
       ]
     },
     {
-      "id": "cans_backpack_attachment",
-      "name": "Cans Backpack Attachment",
-      "type": "Cosmetic",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/cans_backpack_attachment.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
       "id": "cat_bed",
       "name": "Cat Bed",
       "type": "Trinket",
@@ -1890,18 +1830,6 @@
       "weightKg": 0.25,
       "stackSize": null,
       "imageUrl": "https://cdn.arctracker.io/items/celeste_journal.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
-      "id": "cheer",
-      "name": "Cheer",
-      "type": "Cosmetic",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/cheer.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -4467,18 +4395,6 @@
       "recycleSources": null
     },
     {
-      "id": "junior_outfit",
-      "name": "Junior Outfit",
-      "type": "Cosmetic",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/junior_outfit.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
       "id": "jupiter",
       "name": "Jupiter",
       "type": "Sniper Rifle",
@@ -6846,18 +6762,6 @@
         "sensors": 2,
         "speaker_component": 2
       },
-      "recycleSources": null
-    },
-    {
-      "id": "radio_renegade",
-      "name": "Radio Renegade",
-      "type": "Outfit",
-      "rarity": "Common",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/radio_renegade.png",
-      "recyclesInto": null,
       "recycleSources": null
     },
     {
