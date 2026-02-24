@@ -1,7 +1,7 @@
 {
-  "version": "1.9",
-  "generatedAt": "2026-02-24T12:26:09.654Z",
-  "itemCount": 515,
+  "version": "1.10",
+  "generatedAt": "2026-02-24T14:30:28.010Z",
+  "itemCount": 516,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -2371,6 +2371,18 @@
       "recycleSources": null
     },
     {
+      "id": "dam_controlled_access_zone_key",
+      "name": "Dam Controlled Access Zone Key",
+      "type": "Key",
+      "rarity": "Epic",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/dam_controlled_access_zone_key.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "dam_staff_room_key",
       "name": "Dam Staff Room Key",
       "type": "Key",
@@ -2560,7 +2572,7 @@
       "name": "Deadline",
       "type": "Quick Use",
       "rarity": "Epic",
-      "value": 5000,
+      "value": 6000,
       "weightKg": 1,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/deadline.png",
@@ -9574,7 +9586,7 @@
       "name": "Vita Spray",
       "type": "Quick Use",
       "rarity": "Epic",
-      "value": 3000,
+      "value": 3400,
       "weightKg": 1,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vita_spray.png",
@@ -9911,7 +9923,7 @@
       "name": "Wolfpack",
       "type": "Quick Use",
       "rarity": "Epic",
-      "value": 5000,
+      "value": 6000,
       "weightKg": 1,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/wolfpack.png",
