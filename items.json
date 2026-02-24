@@ -1,7 +1,7 @@
 {
-  "version": "1.8",
-  "generatedAt": "2026-02-23T23:19:18.956Z",
-  "itemCount": 511,
+  "version": "1.9",
+  "generatedAt": "2026-02-24T12:26:09.654Z",
+  "itemCount": 515,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -223,11 +223,6 @@
           "yieldsQuantity": 3
         },
         {
-          "sourceItemId": "bastion_cell",
-          "sourceItemName": "Bastion Cell",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "bettina_ii",
           "sourceItemName": "Bettina II",
           "yieldsQuantity": 2
@@ -316,6 +311,11 @@
           "sourceItemId": "vulcano_ii",
           "sourceItemName": "Vulcano II",
           "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "bastion_cell",
+          "sourceItemName": "Bastion Cell",
+          "yieldsQuantity": 1
         },
         {
           "sourceItemId": "bettina_i",
@@ -669,6 +669,11 @@
       },
       "recycleSources": [
         {
+          "sourceItemId": "bastion_cell",
+          "sourceItemName": "Bastion Cell",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "damaged_rocketeer_driver",
           "sourceItemName": "Damaged Rocketeer Driver",
           "yieldsQuantity": 3
@@ -699,11 +704,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "bastion_cell",
-          "sourceItemName": "Bastion Cell",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "bombardier_cell",
           "sourceItemName": "Bombardier Cell",
           "yieldsQuantity": 2
@@ -711,6 +711,11 @@
         {
           "sourceItemId": "burned_arc_circuitry",
           "sourceItemName": "Burned Arc Circuitry",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "comet_igniter",
+          "sourceItemName": "Comet Igniter",
           "yieldsQuantity": 2
         },
         {
@@ -724,18 +729,13 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "hornet_driver",
-          "sourceItemName": "Hornet Driver",
+          "sourceItemId": "firefly_burner",
+          "sourceItemName": "Firefly Burner",
           "yieldsQuantity": 2
         },
         {
           "sourceItemId": "sentinel_firing_core",
           "sourceItemName": "Sentinel Firing Core",
-          "yieldsQuantity": 2
-        },
-        {
-          "sourceItemId": "surveyor_vault",
-          "sourceItemName": "Surveyor Vault",
           "yieldsQuantity": 2
         },
         {
@@ -769,6 +769,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "hornet_driver",
+          "sourceItemName": "Hornet Driver",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "pop_trigger",
           "sourceItemName": "Pop Trigger",
           "yieldsQuantity": 1
@@ -781,6 +786,11 @@
         {
           "sourceItemId": "spotter_relay",
           "sourceItemName": "Spotter Relay",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "surveyor_vault",
+          "sourceItemName": "Surveyor Vault",
           "yieldsQuantity": 1
         },
         {
@@ -1116,13 +1126,13 @@
       "name": "Bastion Cell",
       "type": "Recyclable",
       "rarity": "Epic",
-      "value": 5000,
+      "value": 3000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/bastion_cell.png",
       "recyclesInto": {
-        "advanced_mechanical_components": 2,
-        "arc_alloy": 2
+        "advanced_mechanical_components": 1,
+        "arc_alloy": 3
       },
       "recycleSources": null
     },
@@ -1942,11 +1952,6 @@
           "yieldsQuantity": 1
         },
         {
-          "sourceItemId": "fireball_burner",
-          "sourceItemName": "Fireball Burner",
-          "yieldsQuantity": 1
-        },
-        {
           "sourceItemId": "gas_grenade",
           "sourceItemName": "Gas Grenade",
           "yieldsQuantity": 1
@@ -2092,6 +2097,21 @@
       "stackSize": null,
       "imageUrl": "https://cdn.arctracker.io/items/combat_mk3_flanking_blueprint.png",
       "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "comet_igniter",
+      "name": "Comet Igniter",
+      "type": "Recyclable",
+      "rarity": "Rare",
+      "value": 1000,
+      "weightKg": 1,
+      "stackSize": 3,
+      "imageUrl": "https://cdn.arctracker.io/items/comet_igniter.png",
+      "recyclesInto": {
+        "arc_alloy": 2,
+        "crude_explosives": 2
+      },
       "recycleSources": null
     },
     {
@@ -2283,14 +2303,29 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "comet_igniter",
+          "sourceItemName": "Comet Igniter",
+          "yieldsQuantity": 2
+        },
+        {
           "sourceItemId": "explosive_compound",
           "sourceItemName": "Explosive Compound",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "firefly_burner",
+          "sourceItemName": "Firefly Burner",
           "yieldsQuantity": 2
         },
         {
           "sourceItemId": "trailblazer",
           "sourceItemName": "Trailblazer",
           "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "fireball_burner",
+          "sourceItemName": "Fireball Burner",
+          "yieldsQuantity": 1
         },
         {
           "sourceItemId": "pop_trigger",
@@ -2763,6 +2798,18 @@
       ]
     },
     {
+      "id": "dusty_film_reel",
+      "name": "Dusty Film Reel",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/dusty_film_reel.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "electrical_components",
       "name": "Electrical Components",
       "type": "Refined Material",
@@ -2779,11 +2826,6 @@
         {
           "sourceItemId": "fried_motherboard",
           "sourceItemName": "Fried Motherboard",
-          "yieldsQuantity": 2
-        },
-        {
-          "sourceItemId": "hornet_driver",
-          "sourceItemName": "Hornet Driver",
           "yieldsQuantity": 2
         },
         {
@@ -2807,11 +2849,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "spotter_relay",
-          "sourceItemName": "Spotter Relay",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "advanced_electrical_components",
           "sourceItemName": "Advanced Electrical Components",
           "yieldsQuantity": 1
@@ -2822,6 +2859,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "hornet_driver",
+          "sourceItemName": "Hornet Driver",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "looting_mk2",
           "sourceItemName": "Looting Mk. 2",
           "yieldsQuantity": 1
@@ -2829,6 +2871,11 @@
         {
           "sourceItemId": "showstopper",
           "sourceItemName": "Showstopper",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "spotter_relay",
+          "sourceItemName": "Spotter Relay",
           "yieldsQuantity": 1
         },
         {
@@ -3512,7 +3559,7 @@
       "imageUrl": "https://cdn.arctracker.io/items/fireball_burner.png",
       "recyclesInto": {
         "arc_alloy": 1,
-        "chemicals": 1
+        "crude_explosives": 1
       },
       "recycleSources": [
         {
@@ -3533,6 +3580,21 @@
       "imageUrl": "https://cdn.arctracker.io/items/firecracker.png",
       "recyclesInto": {
         "plastic_parts": 3
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "firefly_burner",
+      "name": "Firefly Burner",
+      "type": "Recyclable",
+      "rarity": "Rare",
+      "value": 1000,
+      "weightKg": 0.75,
+      "stackSize": 3,
+      "imageUrl": "https://cdn.arctracker.io/items/firefly_burner.png",
+      "recyclesInto": {
+        "arc_alloy": 2,
+        "crude_explosives": 2
       },
       "recycleSources": null
     },
@@ -4120,13 +4182,13 @@
       "name": "Hornet Driver",
       "type": "Recyclable",
       "rarity": "Rare",
-      "value": 2000,
+      "value": 1000,
       "weightKg": 0.75,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/hornet_driver.png",
       "recyclesInto": {
-        "arc_alloy": 2,
-        "electrical_components": 2
+        "arc_alloy": 1,
+        "electrical_components": 1
       },
       "recycleSources": null
     },
@@ -5131,11 +5193,6 @@
           "yieldsQuantity": 3
         },
         {
-          "sourceItemId": "sentinel_firing_core",
-          "sourceItemName": "Sentinel Firing Core",
-          "yieldsQuantity": 3
-        },
-        {
           "sourceItemId": "shredder_gyro",
           "sourceItemName": "Shredder Gyro",
           "yieldsQuantity": 3
@@ -5176,13 +5233,13 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "stitcher_iv",
-          "sourceItemName": "Stitcher IV",
+          "sourceItemId": "sentinel_firing_core",
+          "sourceItemName": "Sentinel Firing Core",
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "surveyor_vault",
-          "sourceItemName": "Surveyor Vault",
+          "sourceItemId": "stitcher_iv",
+          "sourceItemName": "Stitcher IV",
           "yieldsQuantity": 2
         },
         {
@@ -5258,6 +5315,11 @@
         {
           "sourceItemId": "stable_stock_ii",
           "sourceItemName": "Stable Stock II",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "surveyor_vault",
+          "sourceItemName": "Surveyor Vault",
           "yieldsQuantity": 1
         },
         {
@@ -6727,6 +6789,18 @@
       ]
     },
     {
+      "id": "project_heartwood_blueprints",
+      "name": "Project Heartwood Blueprints",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/project_heartwood_blueprints.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "projector",
       "name": "Projector",
       "type": "Recyclable",
@@ -6772,9 +6846,9 @@
       "name": "Queen Reactor",
       "type": "Recyclable",
       "rarity": "Legendary",
-      "value": 13000,
+      "value": 11000,
       "weightKg": 10,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/queen_reactor.png",
       "recyclesInto": {
         "magnetic_accelerator": 1,
@@ -7695,13 +7769,13 @@
       "name": "Sentinel Firing Core",
       "type": "Recyclable",
       "rarity": "Rare",
-      "value": 3000,
+      "value": 2000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/sentinel_firing_core.png",
       "recyclesInto": {
         "arc_alloy": 2,
-        "mechanical_components": 3
+        "mechanical_components": 2
       },
       "recycleSources": null
     },
@@ -7845,7 +7919,7 @@
       "name": "Showstopper",
       "type": "Quick Use",
       "rarity": "Rare",
-      "value": 2200,
+      "value": 2100,
       "weightKg": 0.4,
       "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/showstopper.png",
@@ -8417,13 +8491,13 @@
       "name": "Spotter Relay",
       "type": "Recyclable",
       "rarity": "Uncommon",
-      "value": 2000,
+      "value": 1000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/spotter_relay.png",
       "recyclesInto": {
         "arc_alloy": 1,
-        "electrical_components": 2
+        "electrical_components": 1
       },
       "recycleSources": null
     },
@@ -8756,13 +8830,13 @@
       "name": "Surveyor Vault",
       "type": "Recyclable",
       "rarity": "Rare",
-      "value": 2000,
+      "value": 1000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/surveyor_vault.png",
       "recyclesInto": {
-        "arc_alloy": 2,
-        "mechanical_components": 2
+        "arc_alloy": 1,
+        "mechanical_components": 1
       },
       "recycleSources": null
     },
@@ -9647,7 +9721,7 @@
       "name": "Wasp Driver",
       "type": "Recyclable",
       "rarity": "Rare",
-      "value": 1000,
+      "value": 640,
       "weightKg": 0.6,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/wasp_driver.png",
