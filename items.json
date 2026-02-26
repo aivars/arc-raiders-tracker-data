@@ -1,7 +1,7 @@
 {
-  "version": "1.10",
-  "generatedAt": "2026-02-24T14:30:28.010Z",
-  "itemCount": 516,
+  "version": "1.11",
+  "generatedAt": "2026-02-26T06:31:19.662Z",
+  "itemCount": 517,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -62,11 +62,6 @@
       },
       "recycleSources": [
         {
-          "sourceItemId": "rocketeer_driver",
-          "sourceItemName": "Rocketeer Driver",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "combat_mk3_aggressive",
           "sourceItemName": "Combat Mk. 3 (Aggressive)",
           "yieldsQuantity": 1
@@ -104,6 +99,11 @@
         {
           "sourceItemId": "power_rod",
           "sourceItemName": "Power Rod",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "rocketeer_driver",
+          "sourceItemName": "Rocketeer Driver",
           "yieldsQuantity": 1
         },
         {
@@ -238,11 +238,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "bombardier_cell",
-          "sourceItemName": "Bombardier Cell",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "hullcracker_i",
           "sourceItemName": "Hullcracker I",
           "yieldsQuantity": 2
@@ -250,11 +245,6 @@
         {
           "sourceItemId": "hullcracker_ii",
           "sourceItemName": "Hullcracker II",
-          "yieldsQuantity": 2
-        },
-        {
-          "sourceItemId": "leaper_pulse_unit",
-          "sourceItemName": "Leaper Pulse Unit",
           "yieldsQuantity": 2
         },
         {
@@ -323,8 +313,18 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "bombardier_cell",
+          "sourceItemName": "Bombardier Cell",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "flow_controller",
           "sourceItemName": "Flow Controller",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "leaper_pulse_unit",
+          "sourceItemName": "Leaper Pulse Unit",
           "yieldsQuantity": 1
         },
         {
@@ -376,6 +376,18 @@
       "recyclesInto": {
         "assorted_seeds": 3
       },
+      "recycleSources": null
+    },
+    {
+      "id": "agave_juice",
+      "name": "Agave Juice",
+      "type": "Quick Use",
+      "rarity": "Common",
+      "value": 1800,
+      "weightKg": 0.2,
+      "stackSize": 5,
+      "imageUrl": "https://cdn.arctracker.io/items/agave_juice.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -436,7 +448,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/angled_grip_i.png",
       "recyclesInto": {
         "plastic_parts": 6
@@ -450,7 +462,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/angled_grip_ii.png",
       "recyclesInto": {
         "duct_tape": 1,
@@ -462,10 +474,10 @@
       "id": "angled_grip_ii_blueprint",
       "name": "Angled Grip II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/angled_grip_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -477,7 +489,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/angled_grip_iii.png",
       "recyclesInto": {
         "duct_tape": 2,
@@ -489,10 +501,10 @@
       "id": "angled_grip_iii_blueprint",
       "name": "Angled Grip III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/angled_grip_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -531,10 +543,10 @@
       "id": "anvil_blueprint",
       "name": "Anvil Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/anvil_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -546,7 +558,7 @@
       "rarity": "Uncommon",
       "value": 5000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/anvil_i.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -561,7 +573,7 @@
       "rarity": "Uncommon",
       "value": 7000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/anvil_ii.png",
       "recyclesInto": {
         "mechanical_components": 3,
@@ -576,7 +588,7 @@
       "rarity": "Uncommon",
       "value": 10000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/anvil_iii.png",
       "recyclesInto": {
         "mechanical_components": 4,
@@ -591,7 +603,7 @@
       "rarity": "Uncommon",
       "value": 13000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/anvil_iv.png",
       "recyclesInto": {
         "mechanical_components": 5,
@@ -606,7 +618,7 @@
       "rarity": "Legendary",
       "value": 7000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/anvil_splitter.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -621,7 +633,7 @@
       "rarity": "Legendary",
       "value": 27500,
       "weightKg": 14,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/aphelion.png",
       "recyclesInto": {
         "complex_gun_parts": 1,
@@ -633,10 +645,10 @@
       "id": "aphelion_blueprint",
       "name": "Aphelion Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/aphelion_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -674,6 +686,11 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "bombardier_cell",
+          "sourceItemName": "Bombardier Cell",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "damaged_rocketeer_driver",
           "sourceItemName": "Damaged Rocketeer Driver",
           "yieldsQuantity": 3
@@ -689,11 +706,6 @@
           "yieldsQuantity": 3
         },
         {
-          "sourceItemId": "shredder_gyro",
-          "sourceItemName": "Shredder Gyro",
-          "yieldsQuantity": 3
-        },
-        {
           "sourceItemId": "arc_circuitry",
           "sourceItemName": "ARC Circuitry",
           "yieldsQuantity": 2
@@ -701,11 +713,6 @@
         {
           "sourceItemId": "arc_motion_core",
           "sourceItemName": "ARC Motion Core",
-          "yieldsQuantity": 2
-        },
-        {
-          "sourceItemId": "bombardier_cell",
-          "sourceItemName": "Bombardier Cell",
           "yieldsQuantity": 2
         },
         {
@@ -739,9 +746,19 @@
           "yieldsQuantity": 2
         },
         {
+          "sourceItemId": "shredder_gyro",
+          "sourceItemName": "Shredder Gyro",
+          "yieldsQuantity": 2
+        },
+        {
           "sourceItemId": "tick_pod",
           "sourceItemName": "Tick Pod",
           "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "arc_powercell",
+          "sourceItemName": "ARC Powercell",
+          "yieldsQuantity": 1
         },
         {
           "sourceItemId": "damaged_arc_powercell",
@@ -911,7 +928,9 @@
       "weightKg": 0.5,
       "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/arc_powercell.png",
-      "recyclesInto": null,
+      "recyclesInto": {
+        "arc_alloy": 1
+      },
       "recycleSources": [
         {
           "sourceItemId": "advanced_arc_powercell",
@@ -955,7 +974,7 @@
       "rarity": "Uncommon",
       "value": 5500,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/arpeggio_i.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -970,7 +989,7 @@
       "rarity": "Uncommon",
       "value": 8000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/arpeggio_ii.png",
       "recyclesInto": {
         "mechanical_components": 3,
@@ -985,7 +1004,7 @@
       "rarity": "Uncommon",
       "value": 11500,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/arpeggio_iii.png",
       "recyclesInto": {
         "mechanical_components": 4,
@@ -1000,7 +1019,7 @@
       "rarity": "Uncommon",
       "value": 15000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/arpeggio_iv.png",
       "recyclesInto": {
         "mechanical_components": 5,
@@ -1113,10 +1132,10 @@
       "id": "barricade_kit_blueprint",
       "name": "Barricade Kit Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/barricade_kit_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1185,11 +1204,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "showstopper",
-          "sourceItemName": "Showstopper",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "jolt_mine",
           "sourceItemName": "Jolt Mine",
           "yieldsQuantity": 1
@@ -1200,10 +1214,10 @@
       "id": "bettina_blueprint",
       "name": "Bettina Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bettina_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1215,7 +1229,7 @@
       "rarity": "Epic",
       "value": 8000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bettina_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 1,
@@ -1230,7 +1244,7 @@
       "rarity": "Epic",
       "value": 11000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bettina_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -1245,7 +1259,7 @@
       "rarity": "Epic",
       "value": 14000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bettina_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -1258,9 +1272,9 @@
       "name": "Bettina IV",
       "type": "Assault Rifle",
       "rarity": "Epic",
-      "value": 17000,
+      "value": 18000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bettina_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -1290,7 +1304,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/binoculars.png",
       "recyclesInto": {
         "plastic_parts": 4,
@@ -1317,10 +1331,10 @@
       "id": "blaze_grenade_blueprint",
       "name": "Blaze Grenade Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/blaze_grenade_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1380,7 +1394,7 @@
       "rarity": "Epic",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/blue_gate_confiscation_room_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1415,7 +1429,7 @@
       "id": "blue_light_stick_blueprint",
       "name": "Blue Light Stick Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -1427,10 +1441,10 @@
       "id": "bobcat_blueprint",
       "name": "Bobcat Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bobcat_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1442,7 +1456,7 @@
       "rarity": "Epic",
       "value": 13000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bobcat_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -1457,7 +1471,7 @@
       "rarity": "Epic",
       "value": 17000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bobcat_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -1472,7 +1486,7 @@
       "rarity": "Epic",
       "value": 22000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bobcat_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 4,
@@ -1487,7 +1501,7 @@
       "rarity": "Epic",
       "value": 27000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/bobcat_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 5,
@@ -1500,13 +1514,13 @@
       "name": "Bombardier Cell",
       "type": "Recyclable",
       "rarity": "Epic",
-      "value": 5000,
+      "value": 3000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/bombardier_cell.png",
       "recyclesInto": {
-        "advanced_mechanical_components": 2,
-        "arc_alloy": 2
+        "advanced_mechanical_components": 1,
+        "arc_alloy": 3
       },
       "recycleSources": null
     },
@@ -1645,10 +1659,10 @@
       "id": "burletta_blueprint",
       "name": "Burletta Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
-      "value": null,
+      "rarity": "Common",
+      "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/burletta_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1660,7 +1674,7 @@
       "rarity": "Uncommon",
       "value": 2900,
       "weightKg": 4,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/burletta_i.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -1675,7 +1689,7 @@
       "rarity": "Uncommon",
       "value": 5000,
       "weightKg": 4,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/burletta_ii.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -1690,7 +1704,7 @@
       "rarity": "Uncommon",
       "value": 7000,
       "weightKg": 4,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/burletta_iii.png",
       "recyclesInto": {
         "mechanical_components": 3,
@@ -1705,7 +1719,7 @@
       "rarity": "Uncommon",
       "value": 10000,
       "weightKg": 4,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/burletta_iv.png",
       "recyclesInto": {
         "mechanical_components": 4,
@@ -1720,7 +1734,7 @@
       "rarity": "Uncommon",
       "value": 640,
       "weightKg": 1,
-      "stackSize": 5,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/burned_arc_circuitry.png",
       "recyclesInto": {
         "arc_alloy": 2
@@ -1815,11 +1829,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "vita_spray",
-          "sourceItemName": "Vita Spray",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "flame_spray",
           "sourceItemName": "Flame Spray",
           "yieldsQuantity": 1
@@ -1827,6 +1836,11 @@
         {
           "sourceItemId": "smoke_grenade",
           "sourceItemName": "Smoke Grenade",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "vita_spray",
+          "sourceItemName": "Vita Spray",
           "yieldsQuantity": 1
         }
       ]
@@ -1850,7 +1864,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/celeste_journal.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -1992,6 +2006,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "synthesized_fuel",
+          "sourceItemName": "Synthesized Fuel",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "trigger_nade",
           "sourceItemName": "Trigger 'Nade",
           "yieldsQuantity": 1
@@ -2064,10 +2083,10 @@
       "id": "combat_mk3_aggressive_blueprint",
       "name": "Combat Mk. 3 (Aggressive) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/combat_mk3_aggressive_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2091,10 +2110,10 @@
       "id": "combat_mk3_flanking_blueprint",
       "name": "Combat Mk. 3 (Flanking) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/combat_mk3_flanking_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2121,7 +2140,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/compensator_i.png",
       "recyclesInto": {
         "metal_parts": 5
@@ -2135,7 +2154,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/compensator_ii.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -2147,10 +2166,10 @@
       "id": "compensator_ii_blueprint",
       "name": "Compensator II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/compensator_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2162,7 +2181,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/compensator_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -2174,10 +2193,10 @@
       "id": "compensator_iii_blueprint",
       "name": "Compensator III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/compensator_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2216,10 +2235,10 @@
       "id": "complex_gun_parts_blueprint",
       "name": "Complex Gun Parts Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/complex_gun_parts_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2365,7 +2384,7 @@
       "rarity": "Epic",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/dam_control_tower_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2401,7 +2420,7 @@
       "rarity": "Uncommon",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/dam_surveillance_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2413,7 +2432,7 @@
       "rarity": "Rare",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/dam_testing_annex_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2506,7 +2525,7 @@
       "name": "Damaged Rocketeer Driver",
       "type": "Recyclable",
       "rarity": "Common",
-      "value": 2000,
+      "value": 1000,
       "weightKg": 0.25,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/damaged_rocketeer_driver.png",
@@ -2586,7 +2605,7 @@
       "id": "deadline_blueprint",
       "name": "Deadline Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -2613,7 +2632,7 @@
       "id": "defibrillator_blueprint",
       "name": "Defibrillator Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -2856,11 +2875,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "snitch_scanner",
-          "sourceItemName": "Snitch Scanner",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "advanced_electrical_components",
           "sourceItemName": "Advanced Electrical Components",
           "yieldsQuantity": 1
@@ -2883,6 +2897,11 @@
         {
           "sourceItemId": "showstopper",
           "sourceItemName": "Showstopper",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "snitch_scanner",
+          "sourceItemName": "Snitch Scanner",
           "yieldsQuantity": 1
         },
         {
@@ -2938,7 +2957,7 @@
       "rarity": "Legendary",
       "value": 27500,
       "weightKg": 14,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/equalizer.png",
       "recyclesInto": {
         "complex_gun_parts": 1,
@@ -2950,10 +2969,10 @@
       "id": "equalizer_blueprint",
       "name": "Equalizer Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/equalizer_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2977,7 +2996,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/esr_analyzer.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3020,7 +3039,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/experimental_seed_sample.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3097,7 +3116,7 @@
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/explosive_mine.png",
       "recyclesInto": {
-        "oil": 2,
+        "oil": 1,
         "sensors": 1
       },
       "recycleSources": null
@@ -3106,7 +3125,7 @@
       "id": "explosive_mine_blueprint",
       "name": "Explosive Mine Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -3121,7 +3140,7 @@
       "rarity": "Epic",
       "value": 5000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_barrel.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -3133,10 +3152,10 @@
       "id": "extended_barrel_blueprint",
       "name": "Extended Barrel Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3148,7 +3167,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_light_mag_i.png",
       "recyclesInto": {
         "plastic_parts": 6
@@ -3162,7 +3181,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_light_mag_ii.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -3174,10 +3193,10 @@
       "id": "extended_light_mag_ii_blueprint",
       "name": "Extended Light Mag II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_light_mag_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3189,7 +3208,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_light_mag_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -3201,10 +3220,10 @@
       "id": "extended_light_mag_iii_blueprint",
       "name": "Extended Light Mag III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_light_mag_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3216,7 +3235,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_medium_mag_i.png",
       "recyclesInto": {
         "plastic_parts": 6
@@ -3230,7 +3249,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_medium_mag_ii.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -3242,10 +3261,10 @@
       "id": "extended_medium_mag_ii_blueprint",
       "name": "Extended Medium Mag II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_medium_mag_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3257,7 +3276,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_medium_mag_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -3269,7 +3288,7 @@
       "id": "extended_medium_mag_iii_blueprint",
       "name": "Extended Medium Mag III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -3284,7 +3303,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_shotgun_mag_i.png",
       "recyclesInto": {
         "plastic_parts": 6
@@ -3298,7 +3317,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_shotgun_mag_ii.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -3310,7 +3329,7 @@
       "id": "extended_shotgun_mag_ii_blueprint",
       "name": "Extended Shotgun Mag II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -3325,7 +3344,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/extended_shotgun_mag_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -3337,7 +3356,7 @@
       "id": "extended_shotgun_mag_iii_blueprint",
       "name": "Extended Shotgun Mag III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -3469,7 +3488,7 @@
       "rarity": "Common",
       "value": 475,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/ferro_i.png",
       "recyclesInto": {
         "metal_parts": 2,
@@ -3484,7 +3503,7 @@
       "rarity": "Common",
       "value": 1000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/ferro_ii.png",
       "recyclesInto": {
         "metal_parts": 4,
@@ -3499,7 +3518,7 @@
       "rarity": "Common",
       "value": 2000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/ferro_iii.png",
       "recyclesInto": {
         "metal_parts": 6,
@@ -3514,7 +3533,7 @@
       "rarity": "Common",
       "value": 2900,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/ferro_iv.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -3628,10 +3647,10 @@
       "id": "fireworks_box_blueprint",
       "name": "Fireworks Box Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/fireworks_box_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3643,7 +3662,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/first_wave_compass.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3655,7 +3674,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/first_wave_rations.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3667,7 +3686,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/first_wave_tape.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3677,9 +3696,9 @@
       "name": "Flame Spray",
       "type": "Quick Use",
       "rarity": "Uncommon",
-      "value": 640,
+      "value": 2000,
       "weightKg": 1,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/flame_spray.png",
       "recyclesInto": {
         "canister": 1,
@@ -3733,7 +3752,7 @@
       "rarity": "Epic",
       "value": 4000,
       "weightKg": 0.25,
-      "stackSize": 3,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/fossilized_lightning.png",
       "recyclesInto": {
         "explosive_compound": 3
@@ -3747,7 +3766,7 @@
       "rarity": "Common",
       "value": 100,
       "weightKg": 1,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/free_loadout_augment.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3868,10 +3887,10 @@
       "id": "gas_mine_blueprint",
       "name": "Gas Mine Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/gas_mine_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3935,7 +3954,7 @@
       "id": "green_light_stick_blueprint",
       "name": "Green Light Stick Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -3950,7 +3969,7 @@
       "rarity": "Common",
       "value": 450,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hairpin_i.png",
       "recyclesInto": {
         "metal_parts": 2,
@@ -3965,7 +3984,7 @@
       "rarity": "Common",
       "value": 1000,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hairpin_ii.png",
       "recyclesInto": {
         "metal_parts": 4,
@@ -3980,7 +3999,7 @@
       "rarity": "Common",
       "value": 2000,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hairpin_iii.png",
       "recyclesInto": {
         "metal_parts": 6,
@@ -3995,7 +4014,7 @@
       "rarity": "Common",
       "value": 2900,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hairpin_iv.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -4124,7 +4143,7 @@
       "id": "heavy_gun_parts_blueprint",
       "name": "Heavy Gun Parts Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -4139,7 +4158,7 @@
       "rarity": "Epic",
       "value": 5500,
       "weightKg": 9,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/heavy_shield.png",
       "recyclesInto": {
         "arc_circuitry": 2,
@@ -4169,7 +4188,7 @@
       "rarity": "Epic",
       "value": 7000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/horizontal_grip.png",
       "recyclesInto": {
         "duct_tape": 2,
@@ -4222,10 +4241,10 @@
       "id": "hullcracker_blueprint",
       "name": "Hullcracker Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hullcracker_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -4252,7 +4271,7 @@
       "rarity": "Epic",
       "value": 13000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hullcracker_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -4267,7 +4286,7 @@
       "rarity": "Epic",
       "value": 17000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hullcracker_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -4282,7 +4301,7 @@
       "rarity": "Epic",
       "value": 22000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/hullcracker_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 4,
@@ -4323,7 +4342,7 @@
       "id": "il_toro_blueprint",
       "name": "Il Toro Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -4338,7 +4357,7 @@
       "rarity": "Uncommon",
       "value": 5000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/il_toro_i.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -4353,7 +4372,7 @@
       "rarity": "Uncommon",
       "value": 7000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/il_toro_ii.png",
       "recyclesInto": {
         "mechanical_components": 3,
@@ -4368,7 +4387,7 @@
       "rarity": "Uncommon",
       "value": 10000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/il_toro_iii.png",
       "recyclesInto": {
         "mechanical_components": 4,
@@ -4383,7 +4402,7 @@
       "rarity": "Uncommon",
       "value": 13000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/il_toro_iv.png",
       "recyclesInto": {
         "mechanical_components": 5,
@@ -4484,7 +4503,7 @@
       "id": "jolt_mine_blueprint",
       "name": "Jolt Mine Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -4499,7 +4518,7 @@
       "rarity": "Legendary",
       "value": 27500,
       "weightKg": 9,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/jupiter.png",
       "recyclesInto": {
         "complex_gun_parts": 1,
@@ -4511,10 +4530,10 @@
       "id": "jupiter_blueprint",
       "name": "Jupiter Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/jupiter_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -4526,7 +4545,7 @@
       "rarity": "Common",
       "value": 840,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/kettle_i.png",
       "recyclesInto": {
         "metal_parts": 3,
@@ -4541,7 +4560,7 @@
       "rarity": "Common",
       "value": 2000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/kettle_ii.png",
       "recyclesInto": {
         "metal_parts": 6,
@@ -4556,7 +4575,7 @@
       "rarity": "Common",
       "value": 3000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/kettle_iii.png",
       "recyclesInto": {
         "metal_parts": 12,
@@ -4571,7 +4590,7 @@
       "rarity": "Common",
       "value": 5000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/kettle_iv.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -4586,7 +4605,7 @@
       "rarity": "Legendary",
       "value": 7000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/kinetic_converter.png",
       "recyclesInto": {
         "duct_tape": 2,
@@ -4613,7 +4632,7 @@
       "rarity": "Rare",
       "value": 2000,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/laboratory_reagents.png",
       "recyclesInto": {
         "chemicals": 16,
@@ -4650,12 +4669,12 @@
       "name": "Leaper Pulse Unit",
       "type": "Recyclable",
       "rarity": "Epic",
-      "value": 5000,
+      "value": 3000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/leaper_pulse_unit.png",
       "recyclesInto": {
-        "advanced_mechanical_components": 2,
+        "advanced_mechanical_components": 1,
         "arc_alloy": 3
       },
       "recycleSources": null
@@ -4696,7 +4715,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/lidar_scanner.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -4764,7 +4783,7 @@
       "id": "light_gun_parts_blueprint",
       "name": "Light Gun Parts Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -4794,7 +4813,7 @@
       "rarity": "Uncommon",
       "value": 640,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/light_shield.png",
       "recyclesInto": {
         "plastic_parts": 4
@@ -4808,7 +4827,7 @@
       "rarity": "Epic",
       "value": 5000,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/lightweight_stock.png",
       "recyclesInto": {
         "duct_tape": 1,
@@ -4820,10 +4839,10 @@
       "id": "lightweight_stock_blueprint",
       "name": "Lightweight Stock Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/lightweight_stock_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -4892,10 +4911,10 @@
       "id": "looting_mk3_safekeeper_blueprint",
       "name": "Looting Mk. 3 (Safekeeper) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/looting_mk3_safekeeper_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -4934,7 +4953,7 @@
       "rarity": "Uncommon",
       "value": 1000,
       "weightKg": 0.4,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/lure_grenade.png",
       "recyclesInto": {
         "speaker_component": 1
@@ -4945,10 +4964,10 @@
       "id": "lure_grenade_blueprint",
       "name": "Lure Grenade Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/lure_grenade_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -5105,7 +5124,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/major_aivas_patch.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -5115,7 +5134,7 @@
       "name": "Matriarch Reactor",
       "type": "Recyclable",
       "rarity": "Legendary",
-      "value": 13000,
+      "value": 11000,
       "weightKg": 10,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/matriarch_reactor.png",
@@ -5205,11 +5224,6 @@
           "yieldsQuantity": 3
         },
         {
-          "sourceItemId": "shredder_gyro",
-          "sourceItemName": "Shredder Gyro",
-          "yieldsQuantity": 3
-        },
-        {
           "sourceItemId": "anvil_i",
           "sourceItemName": "Anvil I",
           "yieldsQuantity": 2
@@ -5247,6 +5261,11 @@
         {
           "sourceItemId": "sentinel_firing_core",
           "sourceItemName": "Sentinel Firing Core",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "shredder_gyro",
+          "sourceItemName": "Shredder Gyro",
           "yieldsQuantity": 2
         },
         {
@@ -5477,10 +5496,10 @@
       "id": "medium_gun_parts_blueprint",
       "name": "Medium Gun Parts Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/medium_gun_parts_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -5492,7 +5511,7 @@
       "rarity": "Rare",
       "value": 2000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/medium_shield.png",
       "recyclesInto": {
         "arc_circuitry": 1
@@ -5924,7 +5943,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/moisture_meter.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -5956,7 +5975,7 @@
       "rarity": "Rare",
       "value": 2000,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/motor.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -5971,7 +5990,7 @@
       "rarity": "Uncommon",
       "value": 1000,
       "weightKg": 0.2,
-      "stackSize": null,
+      "stackSize": 10,
       "imageUrl": "https://cdn.arctracker.io/items/mushroom.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -6007,7 +6026,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/muzzle_brake_i.png",
       "recyclesInto": {
         "metal_parts": 5
@@ -6021,7 +6040,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/muzzle_brake_ii.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -6033,7 +6052,7 @@
       "id": "muzzle_brake_ii_blueprint",
       "name": "Muzzle Brake II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -6048,7 +6067,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/muzzle_brake_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -6060,10 +6079,10 @@
       "id": "muzzle_brake_iii_blueprint",
       "name": "Muzzle Brake III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/muzzle_brake_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -6103,7 +6122,7 @@
       "rarity": "Common",
       "value": null,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/nutrient_meter.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -6137,11 +6156,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "explosive_mine",
-          "sourceItemName": "Explosive Mine",
-          "yieldsQuantity": 2
-        },
-        {
           "sourceItemId": "motor",
           "sourceItemName": "Motor",
           "yieldsQuantity": 2
@@ -6155,6 +6169,11 @@
           "sourceItemId": "water_pump",
           "sourceItemName": "Water Pump",
           "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "explosive_mine",
+          "sourceItemName": "Explosive Mine",
+          "yieldsQuantity": 1
         },
         {
           "sourceItemId": "heavy_fuze_grenade",
@@ -6198,10 +6217,10 @@
       "id": "osprey_blueprint",
       "name": "Osprey Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/osprey_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -6213,7 +6232,7 @@
       "rarity": "Rare",
       "value": 7000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/osprey_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 1,
@@ -6228,7 +6247,7 @@
       "rarity": "Rare",
       "value": 10000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/osprey_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -6243,7 +6262,7 @@
       "rarity": "Rare",
       "value": 13000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/osprey_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -6258,7 +6277,7 @@
       "rarity": "Rare",
       "value": 17000,
       "weightKg": 7,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/osprey_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -6273,7 +6292,7 @@
       "rarity": "Epic",
       "value": 5000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/padded_stock.png",
       "recyclesInto": {
         "duct_tape": 1,
@@ -6285,10 +6304,10 @@
       "id": "padded_stock_blueprint",
       "name": "Padded Stock Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/padded_stock_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -6324,7 +6343,7 @@
       "rarity": "Epic",
       "value": 5000,
       "weightKg": 1,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/photoelectric_cloak.png",
       "recyclesInto": {
         "advanced_electrical_components": 1,
@@ -6523,11 +6542,6 @@
         {
           "sourceItemId": "processor",
           "sourceItemName": "Processor",
-          "yieldsQuantity": 1
-        },
-        {
-          "sourceItemId": "synthesized_fuel",
-          "sourceItemName": "Synthesized Fuel",
           "yieldsQuantity": 1
         },
         {
@@ -6845,10 +6859,10 @@
       "id": "pulse_mine_blueprint",
       "name": "Pulse Mine Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/pulse_mine_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -6929,7 +6943,7 @@
       "rarity": "Common",
       "value": 1750,
       "weightKg": 6,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/rattler_i.png",
       "recyclesInto": {
         "metal_parts": 8
@@ -6943,7 +6957,7 @@
       "rarity": "Common",
       "value": 3000,
       "weightKg": 6,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/rattler_ii.png",
       "recyclesInto": {
         "metal_parts": 12
@@ -6957,7 +6971,7 @@
       "rarity": "Common",
       "value": 5000,
       "weightKg": 6,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/rattler_iii.png",
       "recyclesInto": {
         "mechanical_components": 3,
@@ -6972,7 +6986,7 @@
       "rarity": "Common",
       "value": 7000,
       "weightKg": 6,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/rattler_iv.png",
       "recyclesInto": {
         "mechanical_components": 4,
@@ -6987,7 +7001,7 @@
       "rarity": "Uncommon",
       "value": 1000,
       "weightKg": 0.2,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/recorder.png",
       "recyclesInto": {
         "plastic_parts": 10
@@ -7024,7 +7038,7 @@
       "id": "red_light_stick_blueprint",
       "name": "Red Light Stick Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -7078,10 +7092,10 @@
       "id": "remote_raider_flare_blueprint",
       "name": "Remote Raider Flare Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/remote_raider_flare_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7093,7 +7107,7 @@
       "rarity": "Rare",
       "value": 7000,
       "weightKg": 10,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/renegade_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 1,
@@ -7108,7 +7122,7 @@
       "rarity": "Rare",
       "value": 10000,
       "weightKg": 10,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/renegade_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -7123,7 +7137,7 @@
       "rarity": "Rare",
       "value": 13000,
       "weightKg": 10,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/renegade_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -7138,7 +7152,7 @@
       "rarity": "Rare",
       "value": 17000,
       "weightKg": 10,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/renegade_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -7193,12 +7207,12 @@
       "name": "Rocketeer Driver",
       "type": "Recyclable",
       "rarity": "Epic",
-      "value": 5000,
+      "value": 3000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/rocketeer_driver.png",
       "recyclesInto": {
-        "advanced_electrical_components": 2,
+        "advanced_electrical_components": 1,
         "arc_alloy": 3
       },
       "recycleSources": null
@@ -7647,7 +7661,7 @@
       "rarity": "Rare",
       "value": 1000,
       "weightKg": 2,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/rusted_tools.png",
       "recyclesInto": {
         "metal_parts": 8,
@@ -7702,10 +7716,10 @@
       "id": "seeker_grenade_blueprint",
       "name": "Seeker Grenade Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/seeker_grenade_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7838,7 +7852,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_choke_i.png",
       "recyclesInto": {
         "metal_parts": 5
@@ -7852,7 +7866,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_choke_ii.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -7864,10 +7878,10 @@
       "id": "shotgun_choke_ii_blueprint",
       "name": "Shotgun Choke II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_choke_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7879,7 +7893,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_choke_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -7891,10 +7905,10 @@
       "id": "shotgun_choke_iii_blueprint",
       "name": "Shotgun Choke III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_choke_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7906,7 +7920,7 @@
       "rarity": "Epic",
       "value": 5000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_silencer.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -7918,10 +7932,10 @@
       "id": "shotgun_silencer_blueprint",
       "name": "Shotgun Silencer Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/shotgun_silencer_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7936,8 +7950,8 @@
       "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/showstopper.png",
       "recyclesInto": {
-        "battery": 2,
-        "electrical_components": 1
+        "electrical_components": 1,
+        "voltage_converter": 1
       },
       "recycleSources": null
     },
@@ -7945,10 +7959,10 @@
       "id": "showstopper_blueprint",
       "name": "Showstopper Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/showstopper_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7973,13 +7987,13 @@
       "name": "Shredder Gyro",
       "type": "Recyclable",
       "rarity": "Rare",
-      "value": 3000,
+      "value": 2000,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/shredder_gyro.png",
       "recyclesInto": {
-        "arc_alloy": 3,
-        "mechanical_components": 3
+        "arc_alloy": 2,
+        "mechanical_components": 2
       },
       "recycleSources": null
     },
@@ -8005,7 +8019,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/silencer_i.png",
       "recyclesInto": {
         "mechanical_components": 1,
@@ -8017,10 +8031,10 @@
       "id": "silencer_i_blueprint",
       "name": "Silencer I Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/silencer_i_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8032,7 +8046,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/silencer_ii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -8044,10 +8058,10 @@
       "id": "silencer_ii_blueprint",
       "name": "Silencer II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/silencer_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8059,7 +8073,7 @@
       "rarity": "Epic",
       "value": 7000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/silencer_iii.png",
       "recyclesInto": {
         "mod_components": 1,
@@ -8268,7 +8282,7 @@
       "rarity": "Rare",
       "value": 1000,
       "weightKg": 0.2,
-      "stackSize": 3,
+      "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/smoke_grenade.png",
       "recyclesInto": {
         "canister": 1,
@@ -8280,10 +8294,10 @@
       "id": "smoke_grenade_blueprint",
       "name": "Smoke Grenade Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/smoke_grenade_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8322,7 +8336,7 @@
       "rarity": "Legendary",
       "value": 14000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/snap_hook.png",
       "recyclesInto": {
         "power_rod": 1,
@@ -8334,10 +8348,10 @@
       "id": "snap_hook_blueprint",
       "name": "Snap Hook Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/snap_hook_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8347,13 +8361,13 @@
       "name": "Snitch Scanner",
       "type": "Recyclable",
       "rarity": "Uncommon",
-      "value": 2000,
+      "value": 1000,
       "weightKg": 0.75,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/snitch_scanner.png",
       "recyclesInto": {
         "arc_alloy": 1,
-        "electrical_components": 2
+        "electrical_components": 1
       },
       "recycleSources": null
     },
@@ -8388,7 +8402,7 @@
       "rarity": "Rare",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/spaceport_control_tower_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8400,7 +8414,7 @@
       "rarity": "Uncommon",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/spaceport_trench_tower_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8412,7 +8426,7 @@
       "rarity": "Uncommon",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/spaceport_warehouse_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8490,7 +8504,7 @@
       "rarity": "Epic",
       "value": 3500,
       "weightKg": 1.5,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/spectrum_analyzer.png",
       "recyclesInto": {
         "exodus_modules": 1,
@@ -8535,7 +8549,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stable_stock_i.png",
       "recyclesInto": {
         "rubber_parts": 6
@@ -8549,7 +8563,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stable_stock_ii.png",
       "recyclesInto": {
         "duct_tape": 1,
@@ -8561,10 +8575,10 @@
       "id": "stable_stock_ii_blueprint",
       "name": "Stable Stock II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stable_stock_ii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8576,7 +8590,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stable_stock_iii.png",
       "recyclesInto": {
         "duct_tape": 2,
@@ -8588,10 +8602,10 @@
       "id": "stable_stock_iii_blueprint",
       "name": "Stable Stock III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stable_stock_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8719,7 +8733,7 @@
       "rarity": "Uncommon",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stella_montis_assembly_admin_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8743,7 +8757,7 @@
       "rarity": "Rare",
       "value": 100,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stella_montis_security_checkpoint_key.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8770,7 +8784,7 @@
       "rarity": "Common",
       "value": 800,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stitcher_i.png",
       "recyclesInto": {
         "metal_parts": 3,
@@ -8785,7 +8799,7 @@
       "rarity": "Common",
       "value": 2000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stitcher_ii.png",
       "recyclesInto": {
         "metal_parts": 6,
@@ -8800,7 +8814,7 @@
       "rarity": "Common",
       "value": 3000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stitcher_iii.png",
       "recyclesInto": {
         "metal_parts": 12,
@@ -8815,7 +8829,7 @@
       "rarity": "Common",
       "value": 5000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/stitcher_iv.png",
       "recyclesInto": {
         "mechanical_components": 2,
@@ -8862,8 +8876,8 @@
       "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/synthesized_fuel.png",
       "recyclesInto": {
-        "oil": 1,
-        "plastic_parts": 1
+        "chemicals": 1,
+        "oil": 1
       },
       "recycleSources": [
         {
@@ -8948,10 +8962,10 @@
       "id": "tactical_mk3_defensive_blueprint",
       "name": "Tactical Mk. 3 (Defensive) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_defensive_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -8975,10 +8989,10 @@
       "id": "tactical_mk3_healing_blueprint",
       "name": "Tactical Mk. 3 (Healing) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_healing_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9002,10 +9016,10 @@
       "id": "tactical_mk3_revival_blueprint",
       "name": "Tactical Mk. 3 (Revival) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_revival_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9029,10 +9043,10 @@
       "id": "tagging_grenade_blueprint",
       "name": "Tagging Grenade Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tagging_grenade_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9058,7 +9072,7 @@
       "rarity": "Uncommon",
       "value": 640,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/tattered_clothes.png",
       "recyclesInto": {
         "fabric": 11
@@ -9084,10 +9098,10 @@
       "id": "tempest_blueprint",
       "name": "Tempest Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tempest_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9099,7 +9113,7 @@
       "rarity": "Epic",
       "value": 13000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tempest_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -9114,7 +9128,7 @@
       "rarity": "Epic",
       "value": 17000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tempest_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -9129,7 +9143,7 @@
       "rarity": "Epic",
       "value": 22000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tempest_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 4,
@@ -9144,7 +9158,7 @@
       "rarity": "Epic",
       "value": 27000,
       "weightKg": 11,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/tempest_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 5,
@@ -9227,10 +9241,10 @@
       "id": "torrente_blueprint",
       "name": "Torrente Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/torrente_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9242,7 +9256,7 @@
       "rarity": "Rare",
       "value": 7000,
       "weightKg": 12,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/torrente_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 1,
@@ -9257,7 +9271,7 @@
       "rarity": "Rare",
       "value": 10000,
       "weightKg": 12,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/torrente_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -9272,7 +9286,7 @@
       "rarity": "Rare",
       "value": 13000,
       "weightKg": 12,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/torrente_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -9285,9 +9299,9 @@
       "name": "Torrente IV",
       "type": "LMG",
       "rarity": "Rare",
-      "value": 16000,
+      "value": 17000,
       "weightKg": 12,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/torrente_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -9300,7 +9314,7 @@
       "name": "Trailblazer",
       "type": "Quick Use",
       "rarity": "Rare",
-      "value": 1600,
+      "value": 2200,
       "weightKg": 1,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/trailblazer.png",
@@ -9313,10 +9327,10 @@
       "id": "trailblazer_blueprint",
       "name": "Trailblazer Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/trailblazer_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9340,7 +9354,7 @@
       "id": "trigger_nade_blueprint",
       "name": "Trigger Nade Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -9382,7 +9396,7 @@
       "rarity": "Rare",
       "value": 2000,
       "weightKg": 3,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/unusable_weapon.png",
       "recyclesInto": {
         "metal_parts": 4,
@@ -9406,10 +9420,10 @@
       "id": "venator_blueprint",
       "name": "Venator Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/venator_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9421,7 +9435,7 @@
       "rarity": "Rare",
       "value": 7000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/venator_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 1,
@@ -9436,7 +9450,7 @@
       "rarity": "Rare",
       "value": 10000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/venator_ii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -9451,7 +9465,7 @@
       "rarity": "Rare",
       "value": 13000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/venator_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -9466,7 +9480,7 @@
       "rarity": "Rare",
       "value": 17000,
       "weightKg": 5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/venator_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -9481,7 +9495,7 @@
       "rarity": "Common",
       "value": 640,
       "weightKg": 0.25,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vertical_grip_i.png",
       "recyclesInto": {
         "plastic_parts": 6
@@ -9495,7 +9509,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": 0.5,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vertical_grip_ii.png",
       "recyclesInto": {
         "duct_tape": 1,
@@ -9507,7 +9521,7 @@
       "id": "vertical_grip_ii_blueprint",
       "name": "Vertical Grip II Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -9522,7 +9536,7 @@
       "rarity": "Rare",
       "value": 5000,
       "weightKg": 0.75,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vertical_grip_iii.png",
       "recyclesInto": {
         "duct_tape": 2,
@@ -9534,7 +9548,7 @@
       "id": "vertical_grip_iii_blueprint",
       "name": "Vertical Grip III Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -9573,10 +9587,10 @@
       "id": "vita_shot_blueprint",
       "name": "Vita Shot Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vita_shot_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9592,7 +9606,7 @@
       "imageUrl": "https://cdn.arctracker.io/items/vita_spray.png",
       "recyclesInto": {
         "antiseptic": 1,
-        "canister": 2
+        "canister": 1
       },
       "recycleSources": null
     },
@@ -9600,10 +9614,10 @@
       "id": "vita_spray_blueprint",
       "name": "Vita Spray Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vita_spray_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9653,6 +9667,11 @@
           "sourceItemId": "industrial_charger",
           "sourceItemName": "Industrial Charger",
           "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "showstopper",
+          "sourceItemName": "Showstopper",
+          "yieldsQuantity": 1
         }
       ]
     },
@@ -9660,10 +9679,10 @@
       "id": "vulcano_blueprint",
       "name": "Vulcano Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vulcano_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9675,7 +9694,7 @@
       "rarity": "Epic",
       "value": 10000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vulcano_i.png",
       "recyclesInto": {
         "advanced_mechanical_components": 2,
@@ -9705,7 +9724,7 @@
       "rarity": "Epic",
       "value": 17000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vulcano_iii.png",
       "recyclesInto": {
         "advanced_mechanical_components": 3,
@@ -9720,7 +9739,7 @@
       "rarity": "Epic",
       "value": 22000,
       "weightKg": 8,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/vulcano_iv.png",
       "recyclesInto": {
         "advanced_mechanical_components": 4,
@@ -9937,10 +9956,10 @@
       "id": "wolfpack_blueprint",
       "name": "Wolfpack Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
-      "stackSize": null,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/wolfpack_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -9963,7 +9982,7 @@
       "id": "yellow_light_stick_blueprint",
       "name": "Yellow Light Stick Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
@@ -9978,7 +9997,7 @@
       "rarity": "Rare",
       "value": 1000,
       "weightKg": 0.4,
-      "stackSize": null,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/zipline.png",
       "recyclesInto": {
         "metal_parts": 1,
