@@ -500,6 +500,6 @@ jobs:
           4. Trigger workflow to regenerate events
 
           _This issue was automatically created by the data update workflow._" \
-              --label "enhancement,automated"
+              --label "enhancement"
           fi
           rm -f upstream_changes.txt
