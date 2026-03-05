@@ -481,15 +481,19 @@ jobs:
           EOF
 
       - name: Create issue for new upstream content
-        if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -f upstream_changes.txt ] && [ -s upstream_changes.txt ]; then
-            CHANGES=$(cat upstream_changes.txt)
-            gh issue create \
-              --title "New game content detected in RaidTheory upstream" \
-              --body "The following new content was detected in RaidTheory's arcraiders-data repository:
+            # Skip if an open issue already exists
+            EXISTING=$(gh issue list --search "New game content detected in RaidTheory upstream" --state open --limit 1 --json number --jq '.[0].number')
+            if [ -n "$EXISTING" ]; then
+              echo "Issue #$EXISTING already open, skipping"
+            else
+              CHANGES=$(cat upstream_changes.txt)
+              gh issue create \
+                --title "New game content detected in RaidTheory upstream" \
+                --body "The following new content was detected in RaidTheory's arcraiders-data repository:
 
           $CHANGES
 
@@ -501,6 +505,7 @@ jobs:
           4. Trigger workflow to regenerate events
 
           _This issue was automatically created by the data update workflow._" \
-              --label "enhancement"
+                --label "enhancement"
+            fi
           fi
           rm -f upstream_changes.txt
