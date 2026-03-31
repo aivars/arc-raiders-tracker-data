@@ -1,7 +1,7 @@
 {
-  "version": "1.11",
-  "generatedAt": "2026-02-26T06:31:19.662Z",
-  "itemCount": 517,
+  "version": "1.12",
+  "generatedAt": "2026-03-31T18:29:42.992Z",
+  "itemCount": 529,
   "items": [
     {
       "id": "acoustic_guitar",
@@ -45,7 +45,13 @@
       "recyclesInto": {
         "arc_powercell": 2
       },
-      "recycleSources": null
+      "recycleSources": [
+        {
+          "sourceItemId": "assessor_matrix",
+          "sourceItemName": "Assessor Matrix",
+          "yieldsQuantity": 3
+        }
+      ]
     },
     {
       "id": "advanced_electrical_components",
@@ -130,6 +136,11 @@
           "sourceItemId": "telemetry_transceiver",
           "sourceItemName": "Telemetry Transceiver",
           "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "vaporizer_regulator",
+          "sourceItemName": "Vaporizer Regulator",
+          "yieldsQuantity": 1
         }
       ]
     },
@@ -188,6 +199,11 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "canto_iv",
+          "sourceItemName": "Canto IV",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "hullcracker_iii",
           "sourceItemName": "Hullcracker III",
           "yieldsQuantity": 3
@@ -235,6 +251,16 @@
         {
           "sourceItemId": "bobcat_i",
           "sourceItemName": "Bobcat I",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "canto_ii",
+          "sourceItemName": "Canto II",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "canto_iii",
+          "sourceItemName": "Canto III",
           "yieldsQuantity": 2
         },
         {
@@ -303,6 +329,11 @@
           "yieldsQuantity": 2
         },
         {
+          "sourceItemId": "assessor_matrix",
+          "sourceItemName": "Assessor Matrix",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "bastion_cell",
           "sourceItemName": "Bastion Cell",
           "yieldsQuantity": 1
@@ -315,6 +346,11 @@
         {
           "sourceItemId": "bombardier_cell",
           "sourceItemName": "Bombardier Cell",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "canto_i",
+          "sourceItemName": "Canto I",
           "yieldsQuantity": 1
         },
         {
@@ -756,11 +792,6 @@
           "yieldsQuantity": 2
         },
         {
-          "sourceItemId": "arc_powercell",
-          "sourceItemName": "ARC Powercell",
-          "yieldsQuantity": 1
-        },
-        {
           "sourceItemId": "damaged_arc_powercell",
           "sourceItemName": "Damaged ARC Powercell",
           "yieldsQuantity": 1
@@ -833,6 +864,11 @@
         {
           "sourceItemId": "heavy_shield",
           "sourceItemName": "Heavy Shield",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "vaporizer_regulator",
+          "sourceItemName": "Vaporizer Regulator",
           "yieldsQuantity": 2
         },
         {
@@ -928,9 +964,7 @@
       "weightKg": 0.5,
       "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/arc_powercell.png",
-      "recyclesInto": {
-        "arc_alloy": 1
-      },
+      "recyclesInto": null,
       "recycleSources": [
         {
           "sourceItemId": "advanced_arc_powercell",
@@ -1024,6 +1058,21 @@
       "recyclesInto": {
         "mechanical_components": 5,
         "simple_gun_parts": 5
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "assessor_matrix",
+      "name": "Assessor Matrix",
+      "type": "Recyclable",
+      "rarity": "Epic",
+      "value": 5000,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/assessor_matrix.png",
+      "recyclesInto": {
+        "advanced_arc_powercell": 3,
+        "advanced_mechanical_components": 1
       },
       "recycleSources": null
     },
@@ -1844,6 +1893,78 @@
           "yieldsQuantity": 1
         }
       ]
+    },
+    {
+      "id": "canto_blueprint",
+      "name": "Canto Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/canto_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "canto_i",
+      "name": "Canto I",
+      "type": "SMG",
+      "rarity": "Legendary",
+      "value": 7000,
+      "weightKg": 6.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/canto_i.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 1,
+        "medium_gun_parts": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "canto_ii",
+      "name": "Canto II",
+      "type": "SMG",
+      "rarity": "Legendary",
+      "value": 10000,
+      "weightKg": 6.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/canto_ii.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 2,
+        "medium_gun_parts": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "canto_iii",
+      "name": "Canto III",
+      "type": "SMG",
+      "rarity": "Legendary",
+      "value": 13000,
+      "weightKg": 6.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/canto_iii.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 2,
+        "medium_gun_parts": 3
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "canto_iv",
+      "name": "Canto IV",
+      "type": "SMG",
+      "rarity": "Legendary",
+      "value": 17000,
+      "weightKg": 6.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/canto_iv.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 3,
+        "medium_gun_parts": 3
+      },
+      "recycleSources": null
     },
     {
       "id": "cat_bed",
@@ -2684,6 +2805,18 @@
       "recycleSources": null
     },
     {
+      "id": "dodgers_note",
+      "name": "Dodger's Note",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/dodgers_note.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "dog_collar",
       "name": "Dog Collar",
       "type": "Recyclable",
@@ -2696,6 +2829,32 @@
         "fabric": 8,
         "metal_parts": 1
       },
+      "recycleSources": null
+    },
+    {
+      "id": "dolabra",
+      "name": "Dolabra",
+      "type": "Shotgun",
+      "rarity": "Legendary",
+      "value": 27500,
+      "weightKg": 8,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/dolabra.png",
+      "recyclesInto": {
+        "magnetic_accelerator": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "dolabra_blueprint",
+      "name": "Dolabra Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/dolabra_blueprint.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -2910,6 +3069,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "surge_coil",
+          "sourceItemName": "Surge Coil",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "surge_shield_recharger",
           "sourceItemName": "Surge Shield Recharger",
           "yieldsQuantity": 1
@@ -2943,7 +3107,7 @@
       "name": "Energy Clip",
       "type": "Ammunition",
       "rarity": "Rare",
-      "value": 1000,
+      "value": 200,
       "weightKg": 0.3,
       "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/energy_clip.png",
@@ -3768,7 +3932,10 @@
       "weightKg": 1,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/free_loadout_augment.png",
-      "recyclesInto": null,
+      "recyclesInto": {
+        "plastic_parts": 6,
+        "rubber_parts": 6
+      },
       "recycleSources": null
     },
     {
@@ -4197,18 +4364,6 @@
       "recycleSources": null
     },
     {
-      "id": "horizontal_grip_blueprint",
-      "name": "Horizontal Grip Blueprint",
-      "type": "Blueprint",
-      "rarity": "Legendary",
-      "value": 5000,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/horizontal_grip_blueprint.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
       "id": "hornet_driver",
       "name": "Hornet Driver",
       "type": "Recyclable",
@@ -4614,18 +4769,6 @@
       "recycleSources": null
     },
     {
-      "id": "kinetic_converter_blueprint",
-      "name": "Kinetic Converter Blueprint",
-      "type": "Blueprint",
-      "rarity": "Legendary",
-      "value": 5000,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/kinetic_converter_blueprint.png",
-      "recyclesInto": null,
-      "recycleSources": null
-    },
-    {
       "id": "laboratory_reagents",
       "name": "Laboratory Reagents",
       "type": "Recyclable",
@@ -4938,7 +5081,7 @@
       "id": "looting_mk3_survivor_blueprint",
       "name": "Looting Mk. 3 (Survivor) Blueprint",
       "type": "Blueprint",
-      "rarity": "Legendary",
+      "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": null,
@@ -5061,6 +5204,11 @@
         {
           "sourceItemId": "aphelion",
           "sourceItemName": "Aphelion",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "dolabra",
+          "sourceItemName": "Dolabra",
           "yieldsQuantity": 2
         },
         {
@@ -5401,6 +5549,16 @@
           "yieldsQuantity": 4
         },
         {
+          "sourceItemId": "canto_iii",
+          "sourceItemName": "Canto III",
+          "yieldsQuantity": 3
+        },
+        {
+          "sourceItemId": "canto_iv",
+          "sourceItemName": "Canto IV",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "osprey_iii",
           "sourceItemName": "Osprey III",
           "yieldsQuantity": 3
@@ -5444,6 +5602,16 @@
           "sourceItemId": "venator_iv",
           "sourceItemName": "Venator IV",
           "yieldsQuantity": 3
+        },
+        {
+          "sourceItemId": "canto_i",
+          "sourceItemName": "Canto I",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "canto_ii",
+          "sourceItemName": "Canto II",
+          "yieldsQuantity": 2
         },
         {
           "sourceItemId": "osprey_i",
@@ -6128,6 +6296,18 @@
       "recycleSources": null
     },
     {
+      "id": "official_shutdown_documentation",
+      "name": "Official Shutdown Documentation",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/official_shutdown_documentation.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "oil",
       "name": "Oil",
       "type": "Topside Material",
@@ -6440,6 +6620,11 @@
           "yieldsQuantity": 6
         },
         {
+          "sourceItemId": "free_loadout_augment",
+          "sourceItemName": "Free Loadout Augment",
+          "yieldsQuantity": 6
+        },
+        {
           "sourceItemId": "vertical_grip_i",
           "sourceItemName": "Vertical Grip I",
           "yieldsQuantity": 6
@@ -6710,7 +6895,7 @@
       "type": "Nature",
       "rarity": "Common",
       "value": 640,
-      "weightKg": null,
+      "weightKg": 0.2,
       "stackSize": 10,
       "imageUrl": "https://cdn.arctracker.io/items/prickly_pear.png",
       "recyclesInto": {
@@ -7366,6 +7551,11 @@
           "yieldsQuantity": 7
         },
         {
+          "sourceItemId": "free_loadout_augment",
+          "sourceItemName": "Free Loadout Augment",
+          "yieldsQuantity": 6
+        },
+        {
           "sourceItemId": "kettle_ii",
           "sourceItemName": "Kettle II",
           "yieldsQuantity": 6
@@ -7699,6 +7889,30 @@
       "recycleSources": null
     },
     {
+      "id": "scout_patrol_note",
+      "name": "Scout Patrol Note",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/scout_patrol_note.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "secret_meeting_info",
+      "name": "Secret Meeting Info",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/secret_meeting_info.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "seeker_grenade",
       "name": "Seeker Grenade",
       "type": "Quick Use",
@@ -7776,6 +7990,11 @@
         {
           "sourceItemId": "spectrum_analyzer",
           "sourceItemName": "Spectrum Analyzer",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "surge_coil",
+          "sourceItemName": "Surge Coil",
           "yieldsQuantity": 1
         },
         {
@@ -8079,18 +8298,6 @@
         "mod_components": 1,
         "wires": 3
       },
-      "recycleSources": null
-    },
-    {
-      "id": "silencer_iii_blueprint",
-      "name": "Silencer III Blueprint",
-      "type": "Blueprint",
-      "rarity": "Legendary",
-      "value": 5000,
-      "weightKg": null,
-      "stackSize": null,
-      "imageUrl": "https://cdn.arctracker.io/items/silencer_iii_blueprint.png",
-      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -8838,6 +9045,33 @@
       "recycleSources": null
     },
     {
+      "id": "surge_coil",
+      "name": "Surge Coil",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "value": 2100,
+      "weightKg": null,
+      "stackSize": 3,
+      "imageUrl": "https://cdn.arctracker.io/items/surge_coil.png",
+      "recyclesInto": {
+        "electrical_components": 1,
+        "sensors": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "surge_coil_blueprint",
+      "name": "Surge Coil Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/surge_coil_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "surge_shield_recharger",
       "name": "Surge Shield Recharger",
       "type": "Quick Use",
@@ -9071,7 +9305,7 @@
       "type": "Recyclable",
       "rarity": "Uncommon",
       "value": 640,
-      "weightKg": null,
+      "weightKg": 0.8,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/tattered_clothes.png",
       "recyclesInto": {
@@ -9401,6 +9635,21 @@
       "recyclesInto": {
         "metal_parts": 4,
         "simple_gun_parts": 5
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "vaporizer_regulator",
+      "name": "Vaporizer Regulator",
+      "type": "Recyclable",
+      "rarity": "Epic",
+      "value": 6000,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/vaporizer_regulator.png",
+      "recyclesInto": {
+        "advanced_electrical_components": 1,
+        "arc_circuitry": 2
       },
       "recycleSources": null
     },
