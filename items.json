@@ -1,7 +1,7 @@
 {
-  "version": "1.13",
-  "generatedAt": "2026-04-28T14:59:59.767Z",
-  "itemCount": 537,
+  "version": "1.14",
+  "generatedAt": "2026-04-28T18:43:58.245Z",
+  "itemCount": 546,
   "items": [
     {
       "id": "leviathans_crown_ship_model",
@@ -168,6 +168,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "powered_descender",
+          "sourceItemName": "Powered Descender",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "rocketeer_driver",
           "sourceItemName": "Rocketeer Driver",
           "yieldsQuantity": 1
@@ -190,6 +195,11 @@
         {
           "sourceItemId": "tactical_mk3_revival",
           "sourceItemName": "Tactical Mk. 3 (Revival)",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "tactical_mk3_smoke",
+          "sourceItemName": "Tactical Mk. 3 (Smoke)",
           "yieldsQuantity": 1
         },
         {
@@ -924,6 +934,11 @@
         {
           "sourceItemId": "heavy_shield",
           "sourceItemName": "Heavy Shield",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "powered_descender",
+          "sourceItemName": "Powered Descender",
           "yieldsQuantity": 2
         },
         {
@@ -2485,6 +2500,33 @@
       "recycleSources": null
     },
     {
+      "id": "crash_mat",
+      "name": "Crash Mat",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "value": 1200,
+      "weightKg": 0.6,
+      "stackSize": 5,
+      "imageUrl": "https://cdn.arctracker.io/items/crash_mat.png",
+      "recyclesInto": {
+        "fabric": 6,
+        "plastic_parts": 3
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "crash_mat_blueprint",
+      "name": "Crash Mat Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/crash_mat_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "crude_explosives",
       "name": "Crude Explosives",
       "type": "Refined Material",
@@ -3647,6 +3689,11 @@
           "yieldsQuantity": 8
         },
         {
+          "sourceItemId": "crash_mat",
+          "sourceItemName": "Crash Mat",
+          "yieldsQuantity": 6
+        },
+        {
           "sourceItemId": "durable_cloth",
           "sourceItemName": "Durable Cloth",
           "yieldsQuantity": 6
@@ -3669,6 +3716,11 @@
         {
           "sourceItemId": "ruined_tactical_vest",
           "sourceItemName": "Ruined Tactical Vest",
+          "yieldsQuantity": 5
+        },
+        {
+          "sourceItemId": "white_flag",
+          "sourceItemName": "White Flag",
           "yieldsQuantity": 5
         },
         {
@@ -6737,6 +6789,11 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "crash_mat",
+          "sourceItemName": "Crash Mat",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "electrical_components",
           "sourceItemName": "Electrical Components",
           "yieldsQuantity": 3
@@ -6804,6 +6861,11 @@
         {
           "sourceItemId": "tagging_grenade",
           "sourceItemName": "Tagging Grenade",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "white_flag",
+          "sourceItemName": "White Flag",
           "yieldsQuantity": 1
         }
       ]
@@ -6964,12 +7026,39 @@
     {
       "id": "powered_descender",
       "name": "Powered Descender",
-      "type": "Gadget",
+      "type": "Quick Use",
       "rarity": "Epic",
-      "value": null,
-      "weightKg": null,
-      "stackSize": null,
+      "value": 10000,
+      "weightKg": 5,
+      "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/powered_descender.png",
+      "recyclesInto": {
+        "advanced_electrical_components": 1,
+        "arc_circuitry": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "powered_descender_blueprint",
+      "name": "Powered Descender Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/powered_descender_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "precision_gimbal",
+      "name": "Precision Gimbal",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/precision_gimbal.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -7069,6 +7158,11 @@
         {
           "sourceItemId": "tactical_mk3_revival",
           "sourceItemName": "Tactical Mk. 3 (Revival)",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "tactical_mk3_smoke",
+          "sourceItemName": "Tactical Mk. 3 (Smoke)",
           "yieldsQuantity": 1
         },
         {
@@ -7454,6 +7548,18 @@
         "durable_cloth": 1,
         "magnet": 1
       },
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_107",
+      "name": "Riven Tides Hotel Keycard No. 107",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_107.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -9343,6 +9449,33 @@
       "recycleSources": null
     },
     {
+      "id": "tactical_mk3_smoke",
+      "name": "Tactical Mk. 3 (Smoke)",
+      "type": "Augment",
+      "rarity": "Epic",
+      "value": 5000,
+      "weightKg": 4,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_smoke.png",
+      "recyclesInto": {
+        "advanced_electrical_components": 1,
+        "processor": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "tactical_mk3_smoke_blueprint",
+      "name": "Tactical Mk. 3 (Smoke) Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/tactical_mk3_smoke_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "tagging_grenade",
       "name": "Tagging Grenade",
       "type": "Quick Use",
@@ -10135,6 +10268,33 @@
         "metal_parts": 4,
         "oil": 2
       },
+      "recycleSources": null
+    },
+    {
+      "id": "white_flag",
+      "name": "White Flag",
+      "type": "Quick Use",
+      "rarity": "Uncommon",
+      "value": 640,
+      "weightKg": 0.2,
+      "stackSize": 5,
+      "imageUrl": "https://cdn.arctracker.io/items/white_flag.png",
+      "recyclesInto": {
+        "fabric": 5,
+        "plastic_parts": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "white_flag_blueprint",
+      "name": "White Flag Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/white_flag_blueprint.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
