@@ -1,7 +1,7 @@
 {
-  "version": "1.14",
-  "generatedAt": "2026-04-28T18:43:58.245Z",
-  "itemCount": 546,
+  "version": "1.15",
+  "generatedAt": "2026-05-03T17:23:10.667Z",
+  "itemCount": 555,
   "items": [
     {
       "id": "leviathans_crown_ship_model",
@@ -862,6 +862,11 @@
           "yieldsQuantity": 2
         },
         {
+          "sourceItemId": "wasp_driver",
+          "sourceItemName": "Wasp Driver",
+          "yieldsQuantity": 2
+        },
+        {
           "sourceItemId": "damaged_arc_powercell",
           "sourceItemName": "Damaged ARC Powercell",
           "yieldsQuantity": 1
@@ -910,11 +915,6 @@
           "sourceItemId": "surveyor_vault",
           "sourceItemName": "Surveyor Vault",
           "yieldsQuantity": 1
-        },
-        {
-          "sourceItemId": "wasp_driver",
-          "sourceItemName": "Wasp Driver",
-          "yieldsQuantity": 1
         }
       ]
     },
@@ -959,6 +959,11 @@
         {
           "sourceItemId": "power_rod",
           "sourceItemName": "Power Rod",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "turbine_compressor",
+          "sourceItemName": "Turbine Compressor",
           "yieldsQuantity": 1
         }
       ]
@@ -1007,6 +1012,11 @@
         {
           "sourceItemId": "magnetic_accelerator",
           "sourceItemName": "Magnetic Accelerator",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "turbine_compressor",
+          "sourceItemName": "Turbine Compressor",
           "yieldsQuantity": 1
         },
         {
@@ -3196,11 +3206,6 @@
           "sourceItemId": "tactical_mk2",
           "sourceItemName": "Tactical Mk. 2",
           "yieldsQuantity": 1
-        },
-        {
-          "sourceItemId": "wasp_driver",
-          "sourceItemName": "Wasp Driver",
-          "yieldsQuantity": 1
         }
       ]
     },
@@ -4335,7 +4340,7 @@
       "rarity": "Common",
       "value": 12,
       "weightKg": 0.05,
-      "stackSize": 40,
+      "stackSize": 60,
       "imageUrl": "https://cdn.arctracker.io/items/heavy_ammo.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -7551,6 +7556,42 @@
       "recycleSources": null
     },
     {
+      "id": "riven_tides_classifed_records_keycard",
+      "name": "Riven Tides Classifed Records Keycard",
+      "type": "Key",
+      "rarity": "Uncommon",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_classifed_records_keycard.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_crane_house_keycard",
+      "name": "Riven Tides Crane House Keycard",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_crane_house_keycard.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_102",
+      "name": "Riven Tides Hotel Keycard No. 102",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_102.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "riven_tides_hotel_keycard_no_107",
       "name": "Riven Tides Hotel Keycard No. 107",
       "type": "Key",
@@ -7559,6 +7600,78 @@
       "weightKg": 0.5,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_107.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_113",
+      "name": "Riven Tides Hotel Keycard No. 113",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_113.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_205",
+      "name": "Riven Tides Hotel Keycard No. 205",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_205.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_208",
+      "name": "Riven Tides Hotel Keycard No. 208",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_208.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_311",
+      "name": "Riven Tides Hotel Keycard No. 311",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_311.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_hotel_keycard_no_404",
+      "name": "Riven Tides Hotel Keycard No. 404",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_hotel_keycard_no_404.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_secure_storage_keycard",
+      "name": "Riven Tides Secure Storage Keycard",
+      "type": "Key",
+      "rarity": "Epic",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_secure_storage_keycard.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -9830,11 +9943,14 @@
       "name": "Turbine Compressor",
       "type": "Recyclable",
       "rarity": "Epic",
-      "value": null,
-      "weightKg": null,
+      "value": 5000,
+      "weightKg": 0.5,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/turbine_compressor.png",
-      "recyclesInto": null,
+      "recyclesInto": {
+        "arc_circuitry": 1,
+        "arc_motion_core": 1
+      },
       "recycleSources": null
     },
     {
@@ -9874,7 +9990,7 @@
       "rarity": "Epic",
       "value": 6000,
       "weightKg": 0.5,
-      "stackSize": 1,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/vaporizer_regulator.png",
       "recyclesInto": {
         "advanced_electrical_components": 1,
@@ -10235,8 +10351,7 @@
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/wasp_driver.png",
       "recyclesInto": {
-        "arc_alloy": 1,
-        "electrical_components": 1
+        "arc_alloy": 2
       },
       "recycleSources": null
     },
