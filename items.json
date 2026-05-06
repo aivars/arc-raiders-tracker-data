@@ -1,7 +1,7 @@
 {
-  "version": "1.15",
-  "generatedAt": "2026-05-03T17:23:10.667Z",
-  "itemCount": 555,
+  "version": "1.16",
+  "generatedAt": "2026-05-06T15:03:45.390Z",
+  "itemCount": 561,
   "items": [
     {
       "id": "leviathans_crown_ship_model",
@@ -3355,6 +3355,18 @@
       "recycleSources": null
     },
     {
+      "id": "expired_security_code",
+      "name": "Expired Security Code",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 10,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/expired_security_code.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "explosive_compound",
       "name": "Explosive Compound",
       "type": "Refined Material",
@@ -4478,6 +4490,18 @@
       "recycleSources": null
     },
     {
+      "id": "hidden_bunker_key",
+      "name": "Hidden Bunker Key",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/hidden_bunker_key.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "horizontal_grip",
       "name": "Horizontal Grip",
       "type": "Modification",
@@ -5403,6 +5427,18 @@
       "weightKg": 0.25,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/major_aivas_patch.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "marano_market_business_card",
+      "name": "Marano Market Business Card",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/marano_market_business_card.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -7281,6 +7317,18 @@
       "recycleSources": null
     },
     {
+      "id": "raider_flag",
+      "name": "Raider Flag",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": null,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/raider_flag.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "raider_hatch_key",
       "name": "Raider Hatch Key",
       "type": "Key",
@@ -7564,6 +7612,18 @@
       "weightKg": 0.25,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/riven_tides_classifed_records_keycard.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "riven_tides_classified_records_keycard",
+      "name": "Riven Tides Classified Records Keycard",
+      "type": "Key",
+      "rarity": "Uncommon",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/riven_tides_classified_records_keycard.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -8212,6 +8272,18 @@
       "weightKg": 0.5,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/secret_meeting_info.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "seed_vault_box_key",
+      "name": "Seed Vault Box Key",
+      "type": "Key",
+      "rarity": "Common",
+      "value": 100,
+      "weightKg": 0.25,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/seed_vault_box_key.png",
       "recyclesInto": null,
       "recycleSources": null
     },
