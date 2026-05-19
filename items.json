@@ -1,7 +1,7 @@
 {
-  "version": "1.17",
-  "generatedAt": "2026-05-06T18:46:29.302Z",
-  "itemCount": 560,
+  "version": "1.18",
+  "generatedAt": "2026-05-19T17:09:01.574Z",
+  "itemCount": 568,
   "items": [
     {
       "id": "leviathans_crown_ship_model",
@@ -284,6 +284,11 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "rascal_iv",
+          "sourceItemName": "Rascal IV",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "renegade_iv",
           "sourceItemName": "Renegade IV",
           "yieldsQuantity": 3
@@ -351,6 +356,16 @@
         {
           "sourceItemId": "osprey_iii",
           "sourceItemName": "Osprey III",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "rascal_ii",
+          "sourceItemName": "Rascal II",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "rascal_iii",
+          "sourceItemName": "Rascal III",
           "yieldsQuantity": 2
         },
         {
@@ -451,6 +466,11 @@
         {
           "sourceItemId": "osprey_i",
           "sourceItemName": "Osprey I",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "rascal_i",
+          "sourceItemName": "Rascal I",
           "yieldsQuantity": 1
         },
         {
@@ -3417,14 +3437,55 @@
       "recycleSources": null
     },
     {
-      "id": "extended_barrel",
-      "name": "Extended Barrel",
+      "id": "extended_barrel_i",
+      "name": "Extended Barrel I",
+      "type": "Modification",
+      "rarity": "Common",
+      "value": 1000,
+      "weightKg": null,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_i.png",
+      "recyclesInto": {
+        "metal_parts": 5
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "extended_barrel_ii",
+      "name": "Extended Barrel II",
+      "type": "Modification",
+      "rarity": "Common",
+      "value": 3000,
+      "weightKg": null,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_ii.png",
+      "recyclesInto": {
+        "mechanical_components": 1,
+        "wires": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "extended_barrel_ii_blueprint",
+      "name": "Extended Barrel II Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_ii_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "extended_barrel_iii",
+      "name": "Extended Barrel III",
       "type": "Modification",
       "rarity": "Epic",
       "value": 5000,
       "weightKg": 0.5,
       "stackSize": 1,
-      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel.png",
+      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_iii.png",
       "recyclesInto": {
         "mod_components": 1,
         "wires": 1
@@ -3432,14 +3493,14 @@
       "recycleSources": null
     },
     {
-      "id": "extended_barrel_blueprint",
-      "name": "Extended Barrel Blueprint",
+      "id": "extended_barrel_iii_blueprint",
+      "name": "Extended Barrel III Blueprint",
       "type": "Blueprint",
       "rarity": "Common",
       "value": 5000,
       "weightKg": null,
       "stackSize": 1,
-      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_blueprint.png",
+      "imageUrl": "https://cdn.arctracker.io/items/extended_barrel_iii_blueprint.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -4057,7 +4118,7 @@
       "name": "Free Loadout Augment",
       "type": "Augment",
       "rarity": "Common",
-      "value": 100,
+      "value": 660,
       "weightKg": 1,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/free_loadout_augment.png",
@@ -4409,6 +4470,16 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "rascal_iii",
+          "sourceItemName": "Rascal III",
+          "yieldsQuantity": 3
+        },
+        {
+          "sourceItemId": "rascal_iv",
+          "sourceItemName": "Rascal IV",
+          "yieldsQuantity": 3
+        },
+        {
           "sourceItemId": "vulcano_ii",
           "sourceItemName": "Vulcano II",
           "yieldsQuantity": 3
@@ -4426,6 +4497,16 @@
         {
           "sourceItemId": "hullcracker_i",
           "sourceItemName": "Hullcracker I",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "rascal_i",
+          "sourceItemName": "Rascal I",
+          "yieldsQuantity": 2
+        },
+        {
+          "sourceItemId": "rascal_ii",
+          "sourceItemName": "Rascal II",
           "yieldsQuantity": 2
         },
         {
@@ -5600,6 +5681,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "extended_barrel_ii",
+          "sourceItemName": "Extended Barrel II",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "extended_light_mag_ii",
           "sourceItemName": "Extended Light Mag II",
           "yieldsQuantity": 1
@@ -5985,6 +6071,11 @@
           "yieldsQuantity": 5
         },
         {
+          "sourceItemId": "extended_barrel_i",
+          "sourceItemName": "Extended Barrel I",
+          "yieldsQuantity": 5
+        },
+        {
           "sourceItemId": "industrial_charger",
           "sourceItemName": "Industrial Charger",
           "yieldsQuantity": 5
@@ -6186,8 +6277,8 @@
           "yieldsQuantity": 1
         },
         {
-          "sourceItemId": "extended_barrel",
-          "sourceItemName": "Extended Barrel",
+          "sourceItemId": "extended_barrel_iii",
+          "sourceItemName": "Extended Barrel III",
           "yieldsQuantity": 1
         },
         {
@@ -7338,6 +7429,78 @@
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/raiders_refuge_security_code.png",
       "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "rascal_blueprint",
+      "name": "Rascal Blueprint",
+      "type": "Blueprint",
+      "rarity": "Common",
+      "value": 5000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/rascal_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "rascal_i",
+      "name": "Rascal I",
+      "type": "Special",
+      "rarity": "Rare",
+      "value": 7000,
+      "weightKg": 4,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/rascal_i.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 1,
+        "heavy_gun_parts": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "rascal_ii",
+      "name": "Rascal II",
+      "type": "Special",
+      "rarity": "Rare",
+      "value": 10000,
+      "weightKg": 4,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/rascal_ii.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 2,
+        "heavy_gun_parts": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "rascal_iii",
+      "name": "Rascal III",
+      "type": "Special",
+      "rarity": "Rare",
+      "value": 13000,
+      "weightKg": 4,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/rascal_iii.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 2,
+        "heavy_gun_parts": 3
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "rascal_iv",
+      "name": "Rascal IV",
+      "type": "Special",
+      "rarity": "Rare",
+      "value": 17000,
+      "weightKg": 4,
+      "stackSize": null,
+      "imageUrl": "https://cdn.arctracker.io/items/rascal_iv.png",
+      "recyclesInto": {
+        "advanced_mechanical_components": 3,
+        "heavy_gun_parts": 3
+      },
       "recycleSources": null
     },
     {
@@ -10576,8 +10739,13 @@
           "yieldsQuantity": 1
         },
         {
-          "sourceItemId": "extended_barrel",
-          "sourceItemName": "Extended Barrel",
+          "sourceItemId": "extended_barrel_ii",
+          "sourceItemName": "Extended Barrel II",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "extended_barrel_iii",
+          "sourceItemName": "Extended Barrel III",
           "yieldsQuantity": 1
         },
         {
