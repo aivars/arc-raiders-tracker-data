@@ -1,7 +1,7 @@
 {
-  "version": "1.19",
-  "generatedAt": "2026-05-20T19:00:20.847Z",
-  "itemCount": 567,
+  "version": "1.20",
+  "generatedAt": "2026-06-19T14:11:08.445Z",
+  "itemCount": 576,
   "items": [
     {
       "id": "leviathans_crown_ship_model",
@@ -22,7 +22,7 @@
       "rarity": "Epic",
       "value": 7000,
       "weightKg": 0.5,
-      "stackSize": 1,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/sirena_dorata_ship_model.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -34,7 +34,7 @@
       "rarity": "Uncommon",
       "value": 1000,
       "weightKg": 0.5,
-      "stackSize": 1,
+      "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/twilight_compass_ship_model.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -46,7 +46,7 @@
       "rarity": "Rare",
       "value": 3000,
       "weightKg": 0.5,
-      "stackSize": 1,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/velocity_ship_model.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -58,7 +58,7 @@
       "rarity": "Common",
       "value": 1000,
       "weightKg": 0.5,
-      "stackSize": 1,
+      "stackSize": 10,
       "imageUrl": "https://cdn.arctracker.io/items/wind_sprite_ship_model.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -2261,6 +2261,42 @@
       "recycleSources": null
     },
     {
+      "id": "colorful_shoes_green",
+      "name": "Colorful Shoes (Green)",
+      "type": "Trinket",
+      "rarity": "Epic",
+      "value": 7000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/colorful_shoes_green.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "colorful_shoes_red",
+      "name": "Colorful Shoes (Red)",
+      "type": "Trinket",
+      "rarity": "Rare",
+      "value": 3000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/colorful_shoes_red.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "colorful_shoes_silver",
+      "name": "Colorful Shoes (Silver)",
+      "type": "Trinket",
+      "rarity": "Legendary",
+      "value": 10000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/colorful_shoes_silver.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "combat_mk1",
       "name": "Combat Mk. 1",
       "type": "Augment",
@@ -3218,6 +3254,18 @@
       ]
     },
     {
+      "id": "elephant_obelisk",
+      "name": "Elephant Obelisk",
+      "type": "Trinket",
+      "rarity": "Legendary",
+      "value": 10000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/elephant_obelisk.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "empty_wine_bottle",
       "name": "Empty Wine Bottle",
       "type": "Trinket",
@@ -3265,6 +3313,18 @@
       "weightKg": null,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/equalizer_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "equatorial_sundial",
+      "name": "Equatorial Sundial",
+      "type": "Trinket",
+      "rarity": "Rare",
+      "value": 3000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/equatorial_sundial.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -3440,7 +3500,7 @@
       "id": "extended_barrel_i",
       "name": "Extended Barrel I",
       "type": "Modification",
-      "rarity": "Common",
+      "rarity": "Uncommon",
       "value": 1000,
       "weightKg": null,
       "stackSize": null,
@@ -3454,7 +3514,7 @@
       "id": "extended_barrel_ii",
       "name": "Extended Barrel II",
       "type": "Modification",
-      "rarity": "Common",
+      "rarity": "Rare",
       "value": 3000,
       "weightKg": null,
       "stackSize": null,
@@ -7400,7 +7460,7 @@
       "name": "Raider Flag",
       "type": "Trinket",
       "rarity": "Common",
-      "value": null,
+      "value": 100,
       "weightKg": 0.5,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/raider_flag.png",
@@ -8536,6 +8596,18 @@
         "arc_alloy": 2,
         "mechanical_components": 2
       },
+      "recycleSources": null
+    },
+    {
+      "id": "sextant",
+      "name": "Sextant",
+      "type": "Trinket",
+      "rarity": "Uncommon",
+      "value": 2000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/sextant.png",
+      "recyclesInto": null,
       "recycleSources": null
     },
     {
@@ -9870,6 +9942,18 @@
       "recycleSources": null
     },
     {
+      "id": "tellurion",
+      "name": "Tellurion",
+      "type": "Trinket",
+      "rarity": "Epic",
+      "value": 7000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/tellurion.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
       "id": "tempest_blueprint",
       "name": "Tempest Blueprint",
       "type": "Blueprint",
@@ -10107,6 +10191,18 @@
       "weightKg": null,
       "stackSize": 1,
       "imageUrl": "https://cdn.arctracker.io/items/trailblazer_blueprint.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "train_model",
+      "name": "Train Model",
+      "type": "Trinket",
+      "rarity": "Common",
+      "value": 1000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/train_model.png",
       "recyclesInto": null,
       "recycleSources": null
     },
@@ -10370,6 +10466,18 @@
       "weightKg": 0.3,
       "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/very_comfortable_pillow.png",
+      "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "vintage_steering_wheel",
+      "name": "Vintage Steering Wheel",
+      "type": "Trinket",
+      "rarity": "Uncommon",
+      "value": 2000,
+      "weightKg": null,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/vintage_steering_wheel.png",
       "recyclesInto": null,
       "recycleSources": null
     },
