@@ -1,7 +1,7 @@
 {
-  "version": "1.20",
-  "generatedAt": "2026-06-19T14:11:08.445Z",
-  "itemCount": 576,
+  "version": "1.21",
+  "generatedAt": "2026-08-19T03:53:51.225Z",
+  "itemCount": 581,
   "items": [
     {
       "id": "leviathans_crown_ship_model",
@@ -140,6 +140,11 @@
         {
           "sourceItemId": "frequency_modulation_box",
           "sourceItemName": "Frequency Modulation Box",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "glitched_arc_light_ring",
+          "sourceItemName": "Glitched ARC Light Ring",
           "yieldsQuantity": 1
         },
         {
@@ -807,6 +812,11 @@
       },
       "recycleSources": [
         {
+          "sourceItemId": "glitched_arc_circuitry",
+          "sourceItemName": "Glitched ARC Circuitry",
+          "yieldsQuantity": 6
+        },
+        {
           "sourceItemId": "bastion_cell",
           "sourceItemName": "Bastion Cell",
           "yieldsQuantity": 3
@@ -819,6 +829,21 @@
         {
           "sourceItemId": "damaged_rocketeer_driver",
           "sourceItemName": "Damaged Rocketeer Driver",
+          "yieldsQuantity": 3
+        },
+        {
+          "sourceItemId": "glitched_arc_light_ring",
+          "sourceItemName": "Glitched ARC Light Ring",
+          "yieldsQuantity": 3
+        },
+        {
+          "sourceItemId": "glitched_arc_phased_array",
+          "sourceItemName": "Glitched ARC Phased Array",
+          "yieldsQuantity": 3
+        },
+        {
+          "sourceItemId": "glitched_arc_power_converter",
+          "sourceItemName": "Glitched ARC Power Converter",
           "yieldsQuantity": 3
         },
         {
@@ -909,6 +934,11 @@
         {
           "sourceItemId": "fireball_burner",
           "sourceItemName": "Fireball Burner",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "glitched_arc_transmitter",
+          "sourceItemName": "Glitched ARC Transmitter",
           "yieldsQuantity": 1
         },
         {
@@ -2279,7 +2309,7 @@
       "rarity": "Rare",
       "value": 3000,
       "weightKg": null,
-      "stackSize": 1,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/colorful_shoes_red.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3212,6 +3242,11 @@
           "yieldsQuantity": 1
         },
         {
+          "sourceItemId": "glitched_arc_transmitter",
+          "sourceItemName": "Glitched ARC Transmitter",
+          "yieldsQuantity": 1
+        },
+        {
           "sourceItemId": "hornet_driver",
           "sourceItemName": "Hornet Driver",
           "yieldsQuantity": 1
@@ -3323,7 +3358,7 @@
       "rarity": "Rare",
       "value": 3000,
       "weightKg": null,
-      "stackSize": 1,
+      "stackSize": 3,
       "imageUrl": "https://cdn.arctracker.io/items/equatorial_sundial.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -3369,6 +3404,11 @@
         {
           "sourceItemId": "geiger_counter",
           "sourceItemName": "Geiger Counter",
+          "yieldsQuantity": 1
+        },
+        {
+          "sourceItemId": "glitched_arc_circuitry",
+          "sourceItemName": "Glitched ARC Circuitry",
           "yieldsQuantity": 1
         },
         {
@@ -4337,6 +4377,80 @@
       "stackSize": 15,
       "imageUrl": "https://cdn.arctracker.io/items/gentle_duck.png",
       "recyclesInto": null,
+      "recycleSources": null
+    },
+    {
+      "id": "glitched_arc_circuitry",
+      "name": "Glitched ARC Circuitry",
+      "type": "Recyclable",
+      "rarity": "Legendary",
+      "value": 5000,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/glitched_arc_circuitry.png",
+      "recyclesInto": {
+        "arc_alloy": 6,
+        "exodus_modules": 1
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "glitched_arc_light_ring",
+      "name": "Glitched ARC Light Ring",
+      "type": "Recyclable",
+      "rarity": "Epic",
+      "value": 3000,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/glitched_arc_light_ring.png",
+      "recyclesInto": {
+        "advanced_electrical_components": 1,
+        "arc_alloy": 3
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "glitched_arc_phased_array",
+      "name": "Glitched ARC Phased Array",
+      "type": "Recyclable",
+      "rarity": "Rare",
+      "value": 2000,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/glitched_arc_phased_array.png",
+      "recyclesInto": {
+        "arc_alloy": 3,
+        "sensors": 2
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "glitched_arc_power_converter",
+      "name": "Glitched ARC Power Converter",
+      "type": "Recyclable",
+      "rarity": "Common",
+      "value": 640,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/glitched_arc_power_converter.png",
+      "recyclesInto": {
+        "arc_alloy": 3
+      },
+      "recycleSources": null
+    },
+    {
+      "id": "glitched_arc_transmitter",
+      "name": "Glitched ARC Transmitter",
+      "type": "Recyclable",
+      "rarity": "Uncommon",
+      "value": 1000,
+      "weightKg": 0.5,
+      "stackSize": 1,
+      "imageUrl": "https://cdn.arctracker.io/items/glitched_arc_transmitter.png",
+      "recyclesInto": {
+        "arc_alloy": 1,
+        "electrical_components": 1
+      },
       "recycleSources": null
     },
     {
@@ -8532,6 +8646,11 @@
           "yieldsQuantity": 3
         },
         {
+          "sourceItemId": "glitched_arc_phased_array",
+          "sourceItemName": "Glitched ARC Phased Array",
+          "yieldsQuantity": 2
+        },
+        {
           "sourceItemId": "radio_relay",
           "sourceItemName": "Radio Relay",
           "yieldsQuantity": 2
@@ -8605,7 +8724,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": null,
-      "stackSize": 1,
+      "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/sextant.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -10201,7 +10320,7 @@
       "rarity": "Common",
       "value": 1000,
       "weightKg": null,
-      "stackSize": 1,
+      "stackSize": 10,
       "imageUrl": "https://cdn.arctracker.io/items/train_model.png",
       "recyclesInto": null,
       "recycleSources": null
@@ -10476,7 +10595,7 @@
       "rarity": "Uncommon",
       "value": 2000,
       "weightKg": null,
-      "stackSize": 1,
+      "stackSize": 5,
       "imageUrl": "https://cdn.arctracker.io/items/vintage_steering_wheel.png",
       "recyclesInto": null,
       "recycleSources": null
