@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-21T00:00:00.000Z",
-  "startTimeUtc": "2026-09-21T00:00:00.000Z",
-  "endTimeUtc": "2026-10-21T00:00:00.000Z",
+  "generatedAt": "2026-09-22T00:00:00.000Z",
+  "startTimeUtc": "2026-09-22T00:00:00.000Z",
+  "endTimeUtc": "2026-10-22T00:00:00.000Z",
   "durationMinutes": 60,
   "eventCount": 1620,
   "events": [
@@ -12,546 +12,6 @@
       "mapId": "buried-city",
       "mapName": "Buried City",
       "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
-      "startTime": 1789948800000,
-      "endTime": 1789952400000
-    },
-    {
-      "eventTypeId": "electromagnetic-storm",
-      "eventName": "Electromagnetic Storm",
-      "category": "major",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
-      "startTime": 1789948800000,
-      "endTime": 1789952400000
-    },
-    {
-      "eventTypeId": "prospecting-probes",
-      "eventName": "Prospecting Probes",
-      "category": "minor",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
-      "startTime": 1789952400000,
-      "endTime": 1789956000000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789952400000,
-      "endTime": 1789956000000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789956000000,
-      "endTime": 1789959600000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1789956000000,
-      "endTime": 1789959600000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "stella-montis",
-      "mapName": "Stella Montis",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789956000000,
-      "endTime": 1789959600000
-    },
-    {
-      "eventTypeId": "bird-city",
-      "eventName": "Bird City",
-      "category": "major",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/bird_city.png",
-      "startTime": 1789959600000,
-      "endTime": 1789963200000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1789959600000,
-      "endTime": 1789963200000
-    },
-    {
-      "eventTypeId": "prospecting-probes",
-      "eventName": "Prospecting Probes",
-      "category": "minor",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
-      "startTime": 1789963200000,
-      "endTime": 1789966800000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789963200000,
-      "endTime": 1789966800000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1789966800000,
-      "endTime": 1789970400000
-    },
-    {
-      "eventTypeId": "husk-graveyard",
-      "eventName": "Husk Graveyard",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
-      "startTime": 1789966800000,
-      "endTime": 1789970400000
-    },
-    {
-      "eventTypeId": "electromagnetic-storm",
-      "eventName": "Electromagnetic Storm",
-      "category": "major",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
-      "startTime": 1789970400000,
-      "endTime": 1789974000000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "stella-montis",
-      "mapName": "Stella Montis",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789970400000,
-      "endTime": 1789974000000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789974000000,
-      "endTime": 1789977600000
-    },
-    {
-      "eventTypeId": "launch-tower-loot",
-      "eventName": "Launch Tower Loot",
-      "category": "minor",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/launch_tower_loot.png",
-      "startTime": 1789974000000,
-      "endTime": 1789977600000
-    },
-    {
-      "eventTypeId": "husk-graveyard",
-      "eventName": "Husk Graveyard",
-      "category": "minor",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
-      "startTime": 1789977600000,
-      "endTime": 1789981200000
-    },
-    {
-      "eventTypeId": "hidden-bunker",
-      "eventName": "Hidden Bunker",
-      "category": "major",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/hidden_bunker.png",
-      "startTime": 1789977600000,
-      "endTime": 1789981200000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1789977600000,
-      "endTime": 1789981200000
-    },
-    {
-      "eventTypeId": "harvester",
-      "eventName": "Harvester",
-      "category": "minor",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
-      "startTime": 1789981200000,
-      "endTime": 1789984800000
-    },
-    {
-      "eventTypeId": "electromagnetic-storm",
-      "eventName": "Electromagnetic Storm",
-      "category": "major",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
-      "startTime": 1789981200000,
-      "endTime": 1789984800000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789984800000,
-      "endTime": 1789988400000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "stella-montis",
-      "mapName": "Stella Montis",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789984800000,
-      "endTime": 1789988400000
-    },
-    {
-      "eventTypeId": "bird-city",
-      "eventName": "Bird City",
-      "category": "major",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/bird_city.png",
-      "startTime": 1789988400000,
-      "endTime": 1789992000000
-    },
-    {
-      "eventTypeId": "prospecting-probes",
-      "eventName": "Prospecting Probes",
-      "category": "minor",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
-      "startTime": 1789988400000,
-      "endTime": 1789992000000
-    },
-    {
-      "eventTypeId": "harvester",
-      "eventName": "Harvester",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
-      "startTime": 1789988400000,
-      "endTime": 1789992000000
-    },
-    {
-      "eventTypeId": "prospecting-probes",
-      "eventName": "Prospecting Probes",
-      "category": "minor",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
-      "startTime": 1789992000000,
-      "endTime": 1789995600000
-    },
-    {
-      "eventTypeId": "electromagnetic-storm",
-      "eventName": "Electromagnetic Storm",
-      "category": "major",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
-      "startTime": 1789992000000,
-      "endTime": 1789995600000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1789995600000,
-      "endTime": 1789999200000
-    },
-    {
-      "eventTypeId": "locked-gate",
-      "eventName": "Locked Gate",
-      "category": "major",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/locked_gate.png",
-      "startTime": 1789995600000,
-      "endTime": 1789999200000
-    },
-    {
-      "eventTypeId": "electromagnetic-storm",
-      "eventName": "Electromagnetic Storm",
-      "category": "major",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
-      "startTime": 1789999200000,
-      "endTime": 1790002800000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1789999200000,
-      "endTime": 1790002800000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "stella-montis",
-      "mapName": "Stella Montis",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1789999200000,
-      "endTime": 1790002800000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790002800000,
-      "endTime": 1790006400000
-    },
-    {
-      "eventTypeId": "launch-tower-loot",
-      "eventName": "Launch Tower Loot",
-      "category": "minor",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/launch_tower_loot.png",
-      "startTime": 1790002800000,
-      "endTime": 1790006400000
-    },
-    {
-      "eventTypeId": "husk-graveyard",
-      "eventName": "Husk Graveyard",
-      "category": "minor",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
-      "startTime": 1790006400000,
-      "endTime": 1790010000000
-    },
-    {
-      "eventTypeId": "hidden-bunker",
-      "eventName": "Hidden Bunker",
-      "category": "major",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/hidden_bunker.png",
-      "startTime": 1790006400000,
-      "endTime": 1790010000000
-    },
-    {
-      "eventTypeId": "husk-graveyard",
-      "eventName": "Husk Graveyard",
-      "category": "minor",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
-      "startTime": 1790010000000,
-      "endTime": 1790013600000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790010000000,
-      "endTime": 1790013600000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790013600000,
-      "endTime": 1790017200000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "stella-montis",
-      "mapName": "Stella Montis",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790013600000,
-      "endTime": 1790017200000
-    },
-    {
-      "eventTypeId": "bird-city",
-      "eventName": "Bird City",
-      "category": "major",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/bird_city.png",
-      "startTime": 1790017200000,
-      "endTime": 1790020800000
-    },
-    {
-      "eventTypeId": "matriarch",
-      "eventName": "Matriarch",
-      "category": "minor",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
-      "startTime": 1790017200000,
-      "endTime": 1790020800000
-    },
-    {
-      "eventTypeId": "prospecting-probes",
-      "eventName": "Prospecting Probes",
-      "category": "minor",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
-      "startTime": 1790020800000,
-      "endTime": 1790024400000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790020800000,
-      "endTime": 1790024400000
-    },
-    {
-      "eventTypeId": "harvester",
-      "eventName": "Harvester",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
-      "startTime": 1790020800000,
-      "endTime": 1790024400000
-    },
-    {
-      "eventTypeId": "harvester",
-      "eventName": "Harvester",
-      "category": "minor",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
-      "startTime": 1790024400000,
-      "endTime": 1790028000000
-    },
-    {
-      "eventTypeId": "locked-gate",
-      "eventName": "Locked Gate",
-      "category": "major",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/locked_gate.png",
-      "startTime": 1790024400000,
-      "endTime": 1790028000000
-    },
-    {
-      "eventTypeId": "electromagnetic-storm",
-      "eventName": "Electromagnetic Storm",
-      "category": "major",
-      "mapId": "dam-battleground",
-      "mapName": "Dam Battleground",
-      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
-      "startTime": 1790028000000,
-      "endTime": 1790031600000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "stella-montis",
-      "mapName": "Stella Montis",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790028000000,
-      "endTime": 1790031600000
-    },
-    {
-      "eventTypeId": "night-raid",
-      "eventName": "Night Raid",
-      "category": "major",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
-      "startTime": 1790031600000,
-      "endTime": 1790035200000
-    },
-    {
-      "eventTypeId": "harvester",
-      "eventName": "Harvester",
-      "category": "minor",
-      "mapId": "the-spaceport",
-      "mapName": "The Spaceport",
-      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
-      "startTime": 1790031600000,
-      "endTime": 1790035200000
-    },
-    {
-      "eventTypeId": "husk-graveyard",
-      "eventName": "Husk Graveyard",
-      "category": "minor",
-      "mapId": "blue-gate",
-      "mapName": "Blue Gate",
-      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
-      "startTime": 1790031600000,
-      "endTime": 1790035200000
-    },
-    {
-      "eventTypeId": "husk-graveyard",
-      "eventName": "Husk Graveyard",
-      "category": "minor",
-      "mapId": "buried-city",
-      "mapName": "Buried City",
-      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
       "startTime": 1790035200000,
       "endTime": 1790038800000
     },
@@ -16204,6 +15664,546 @@
       "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
       "startTime": 1792537200000,
       "endTime": 1792540800000
+    },
+    {
+      "eventTypeId": "husk-graveyard",
+      "eventName": "Husk Graveyard",
+      "category": "minor",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
+      "startTime": 1792540800000,
+      "endTime": 1792544400000
+    },
+    {
+      "eventTypeId": "electromagnetic-storm",
+      "eventName": "Electromagnetic Storm",
+      "category": "major",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
+      "startTime": 1792540800000,
+      "endTime": 1792544400000
+    },
+    {
+      "eventTypeId": "prospecting-probes",
+      "eventName": "Prospecting Probes",
+      "category": "minor",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
+      "startTime": 1792544400000,
+      "endTime": 1792548000000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792544400000,
+      "endTime": 1792548000000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792548000000,
+      "endTime": 1792551600000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792548000000,
+      "endTime": 1792551600000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "stella-montis",
+      "mapName": "Stella Montis",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792548000000,
+      "endTime": 1792551600000
+    },
+    {
+      "eventTypeId": "bird-city",
+      "eventName": "Bird City",
+      "category": "major",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/bird_city.png",
+      "startTime": 1792551600000,
+      "endTime": 1792555200000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792551600000,
+      "endTime": 1792555200000
+    },
+    {
+      "eventTypeId": "prospecting-probes",
+      "eventName": "Prospecting Probes",
+      "category": "minor",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
+      "startTime": 1792555200000,
+      "endTime": 1792558800000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792555200000,
+      "endTime": 1792558800000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792558800000,
+      "endTime": 1792562400000
+    },
+    {
+      "eventTypeId": "husk-graveyard",
+      "eventName": "Husk Graveyard",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
+      "startTime": 1792558800000,
+      "endTime": 1792562400000
+    },
+    {
+      "eventTypeId": "electromagnetic-storm",
+      "eventName": "Electromagnetic Storm",
+      "category": "major",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
+      "startTime": 1792562400000,
+      "endTime": 1792566000000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "stella-montis",
+      "mapName": "Stella Montis",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792562400000,
+      "endTime": 1792566000000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792566000000,
+      "endTime": 1792569600000
+    },
+    {
+      "eventTypeId": "launch-tower-loot",
+      "eventName": "Launch Tower Loot",
+      "category": "minor",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/launch_tower_loot.png",
+      "startTime": 1792566000000,
+      "endTime": 1792569600000
+    },
+    {
+      "eventTypeId": "husk-graveyard",
+      "eventName": "Husk Graveyard",
+      "category": "minor",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
+      "startTime": 1792569600000,
+      "endTime": 1792573200000
+    },
+    {
+      "eventTypeId": "hidden-bunker",
+      "eventName": "Hidden Bunker",
+      "category": "major",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/hidden_bunker.png",
+      "startTime": 1792569600000,
+      "endTime": 1792573200000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792569600000,
+      "endTime": 1792573200000
+    },
+    {
+      "eventTypeId": "harvester",
+      "eventName": "Harvester",
+      "category": "minor",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
+      "startTime": 1792573200000,
+      "endTime": 1792576800000
+    },
+    {
+      "eventTypeId": "electromagnetic-storm",
+      "eventName": "Electromagnetic Storm",
+      "category": "major",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
+      "startTime": 1792573200000,
+      "endTime": 1792576800000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792576800000,
+      "endTime": 1792580400000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "stella-montis",
+      "mapName": "Stella Montis",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792576800000,
+      "endTime": 1792580400000
+    },
+    {
+      "eventTypeId": "bird-city",
+      "eventName": "Bird City",
+      "category": "major",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/bird_city.png",
+      "startTime": 1792580400000,
+      "endTime": 1792584000000
+    },
+    {
+      "eventTypeId": "prospecting-probes",
+      "eventName": "Prospecting Probes",
+      "category": "minor",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
+      "startTime": 1792580400000,
+      "endTime": 1792584000000
+    },
+    {
+      "eventTypeId": "harvester",
+      "eventName": "Harvester",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
+      "startTime": 1792580400000,
+      "endTime": 1792584000000
+    },
+    {
+      "eventTypeId": "prospecting-probes",
+      "eventName": "Prospecting Probes",
+      "category": "minor",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
+      "startTime": 1792584000000,
+      "endTime": 1792587600000
+    },
+    {
+      "eventTypeId": "electromagnetic-storm",
+      "eventName": "Electromagnetic Storm",
+      "category": "major",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
+      "startTime": 1792584000000,
+      "endTime": 1792587600000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792587600000,
+      "endTime": 1792591200000
+    },
+    {
+      "eventTypeId": "locked-gate",
+      "eventName": "Locked Gate",
+      "category": "major",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/locked_gate.png",
+      "startTime": 1792587600000,
+      "endTime": 1792591200000
+    },
+    {
+      "eventTypeId": "electromagnetic-storm",
+      "eventName": "Electromagnetic Storm",
+      "category": "major",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
+      "startTime": 1792591200000,
+      "endTime": 1792594800000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792591200000,
+      "endTime": 1792594800000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "stella-montis",
+      "mapName": "Stella Montis",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792591200000,
+      "endTime": 1792594800000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792594800000,
+      "endTime": 1792598400000
+    },
+    {
+      "eventTypeId": "launch-tower-loot",
+      "eventName": "Launch Tower Loot",
+      "category": "minor",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/launch_tower_loot.png",
+      "startTime": 1792594800000,
+      "endTime": 1792598400000
+    },
+    {
+      "eventTypeId": "husk-graveyard",
+      "eventName": "Husk Graveyard",
+      "category": "minor",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
+      "startTime": 1792598400000,
+      "endTime": 1792602000000
+    },
+    {
+      "eventTypeId": "hidden-bunker",
+      "eventName": "Hidden Bunker",
+      "category": "major",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/hidden_bunker.png",
+      "startTime": 1792598400000,
+      "endTime": 1792602000000
+    },
+    {
+      "eventTypeId": "husk-graveyard",
+      "eventName": "Husk Graveyard",
+      "category": "minor",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
+      "startTime": 1792602000000,
+      "endTime": 1792605600000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792602000000,
+      "endTime": 1792605600000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792605600000,
+      "endTime": 1792609200000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "stella-montis",
+      "mapName": "Stella Montis",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792605600000,
+      "endTime": 1792609200000
+    },
+    {
+      "eventTypeId": "bird-city",
+      "eventName": "Bird City",
+      "category": "major",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/bird_city.png",
+      "startTime": 1792609200000,
+      "endTime": 1792612800000
+    },
+    {
+      "eventTypeId": "matriarch",
+      "eventName": "Matriarch",
+      "category": "minor",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/matriarch.png",
+      "startTime": 1792609200000,
+      "endTime": 1792612800000
+    },
+    {
+      "eventTypeId": "prospecting-probes",
+      "eventName": "Prospecting Probes",
+      "category": "minor",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/prospecting_probes.png",
+      "startTime": 1792612800000,
+      "endTime": 1792616400000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792612800000,
+      "endTime": 1792616400000
+    },
+    {
+      "eventTypeId": "harvester",
+      "eventName": "Harvester",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
+      "startTime": 1792612800000,
+      "endTime": 1792616400000
+    },
+    {
+      "eventTypeId": "harvester",
+      "eventName": "Harvester",
+      "category": "minor",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
+      "startTime": 1792616400000,
+      "endTime": 1792620000000
+    },
+    {
+      "eventTypeId": "locked-gate",
+      "eventName": "Locked Gate",
+      "category": "major",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/locked_gate.png",
+      "startTime": 1792616400000,
+      "endTime": 1792620000000
+    },
+    {
+      "eventTypeId": "electromagnetic-storm",
+      "eventName": "Electromagnetic Storm",
+      "category": "major",
+      "mapId": "dam-battleground",
+      "mapName": "Dam Battleground",
+      "icon": "https://cdn.arctracker.io/map-events/electromagnetic_storm.png",
+      "startTime": 1792620000000,
+      "endTime": 1792623600000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "stella-montis",
+      "mapName": "Stella Montis",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792620000000,
+      "endTime": 1792623600000
+    },
+    {
+      "eventTypeId": "night-raid",
+      "eventName": "Night Raid",
+      "category": "major",
+      "mapId": "buried-city",
+      "mapName": "Buried City",
+      "icon": "https://cdn.arctracker.io/map-events/night_raid.png",
+      "startTime": 1792623600000,
+      "endTime": 1792627200000
+    },
+    {
+      "eventTypeId": "harvester",
+      "eventName": "Harvester",
+      "category": "minor",
+      "mapId": "the-spaceport",
+      "mapName": "The Spaceport",
+      "icon": "https://cdn.arctracker.io/map-events/harvester.png",
+      "startTime": 1792623600000,
+      "endTime": 1792627200000
+    },
+    {
+      "eventTypeId": "husk-graveyard",
+      "eventName": "Husk Graveyard",
+      "category": "minor",
+      "mapId": "blue-gate",
+      "mapName": "Blue Gate",
+      "icon": "https://cdn.arctracker.io/map-events/husk_graveyard.png",
+      "startTime": 1792623600000,
+      "endTime": 1792627200000
     }
   ]
 }
